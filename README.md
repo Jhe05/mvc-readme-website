@@ -58,7 +58,7 @@
 ### 📖 Book Details & Recommendations
 
 <div align="center">
-  <div style="display: flex; flex-direction: column; gap: 32px; flex-wrap: wrap; justify-content: center;">
+  <div style="display: flex; flex-direction: column; gap: 32px; justify-content: center;">
     <img src="https://github.com/user-attachments/assets/e5066d5b-1ac9-4ade-95e1-7ca5ff33c32c" alt="Book Details 1" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
     <img src="https://github.com/user-attachments/assets/6daf704f-8796-46ae-b2ed-4420c7f922b2" alt="Book Details 2" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
   </div>
@@ -69,7 +69,6 @@
 <div align="center">
   <div style="display: flex; flex-direction: column; gap: 32px; flex-wrap: wrap; justify-content: center;">
     <img src="https://github.com/user-attachments/assets/2a028613-5e08-4bd0-995a-d5f3d9619155" alt="Read Book 1" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/b3603b95-bbab-4cd7-bb68-7ed8511161af" alt="Read Book 2" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
   </div>
 </div>
 
