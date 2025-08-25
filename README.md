@@ -30,8 +30,8 @@
 
 <div align="center">
   <div style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center;">
-    <img src="https://github.com/user-attachments/assets/639a71f8-578f-4a9c-a2ff-9c8f818580d4" alt="Login" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/b760ffe2-1b3c-4bc9-a516-ff238c4eee82" alt="Signup" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
+    <div><img src="https://github.com/user-attachments/assets/639a71f8-578f-4a9c-a2ff-9c8f818580d4" alt="Login" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;"></div>
+    <div><img src="https://github.com/user-attachments/assets/b760ffe2-1b3c-4bc9-a516-ff238c4eee82" alt="Signup" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;"></div>
   </div>
 </div>
 
@@ -43,7 +43,7 @@
 
 <div align="center">
   <div style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center;">
-    <img src="https://github.com/user-attachments/assets/afca7be3-a72f-40e4-a71c-258fed15d4c3" alt="Home" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
+    <div><img src="https://github.com/user-attachments/assets/afca7be3-a72f-40e4-a71c-258fed15d4c3" alt="Home" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;"></div>
   </div>
 </div>
 
