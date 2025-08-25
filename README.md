@@ -64,6 +64,15 @@
   </div>
 </div>
 
+### 📖 E-Book Reader
+
+<div align="center">
+  <div style="display: flex; gap: 32px; flex-wrap: wrap; justify-content: center;">
+    <img src="https://github.com/user-attachments/assets/2a028613-5e08-4bd0-995a-d5f3d9619155" alt="Read Book 1" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
+    <img src="https://github.com/user-attachments/assets/b3603b95-bbab-4cd7-bb68-7ed8511161af" alt="Read Book 2" width="420" style="border-radius: 18px; box-shadow: 0 4px 24px #0002; margin: 10px;">
+  </div>
+</div>
+
 ---
 
 ## 🛠️ Admin / E-Library Management System
