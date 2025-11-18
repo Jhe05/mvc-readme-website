@@ -1,0 +1,86 @@
+<!-- rating_widget.html
+This is a standalone example of a star-rating widget that uses the PHP endpoints in this folder.
+Place it in your webroot (or include the JS/CSS into your BookDetails page) and edit the `API_BASE` path if needed.
+-->
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Rating widget example</title>
+<style>
+  .stars { display:inline-block; }
+  .star { font-size:28px; color:#ddd; cursor:pointer; margin-right:4px; }
+  .star.filled { color:#ffcc00; }
+  .rating-info { margin-left:12px; color:#444; display:inline-block; }
+</style>
+</head>
+<body>
+
+<div id="rating-root" data-book-id="1" data-user-id="1">
+  <div class="stars" id="stars"></div>
+  <span class="rating-info" id="rating-info">Loading…</span>
+</div>
+
+<script>
+const API_BASE = '.'; // change if PHP endpoints are served from a different folder
+const root = document.getElementById('rating-root');
+const bookId = parseInt(root.getAttribute('data-book-id'));
+const userId = parseInt(root.getAttribute('data-user-id'));
+const starsEl = document.getElementById('stars');
+const infoEl = document.getElementById('rating-info');
+let currentRating = 0;
+
+function renderStars(r) {
+  starsEl.innerHTML = '';
+  for (let i=1;i<=5;i++){
+    const s = document.createElement('span');
+    s.className = 'star' + (i<=r ? ' filled' : '');
+    s.innerHTML = '&#9733;';
+    s.dataset.val = i;
+    s.addEventListener('click', onStarClick);
+    starsEl.appendChild(s);
+  }
+}
+
+async function loadAvg(){
+  try{
+    const res = await fetch(`${API_BASE}/get_average_rating.php?book_id=${bookId}`);
+    const json = await res.json();
+    if (json.success){
+      infoEl.textContent = `Average: ${json.avg ? json.avg.toFixed(2) : '0.00'} (${json.count})`;
+    } else {
+      infoEl.textContent = 'No ratings yet';
+    }
+  }catch(e){ infoEl.textContent = 'Error'; }
+}
+
+async function onStarClick(e){
+  const val = parseInt(e.currentTarget.dataset.val);
+  // send POST to rate_book.php
+  const form = new URLSearchParams();
+  form.append('book_id', bookId);
+  form.append('user_id', userId);
+  form.append('rating', val);
+
+  try{
+    const resp = await fetch(`${API_BASE}/rate_book.php`, { method: 'POST', body: form });
+    const j = await resp.json();
+    if (j.success){
+      currentRating = val;
+      renderStars(currentRating);
+      infoEl.textContent = `Average: ${j.avg ? j.avg.toFixed(2) : '0.00'} (${j.count})`;
+      alert(j.message || 'Rating saved');
+    } else {
+      alert('Error saving rating: ' + (j.error || 'unknown'));
+    }
+  }catch(err){ alert('Network error'); }
+}
+
+// initial
+renderStars(0);
+loadAvg();
+</script>
+
+</body>
+</html>

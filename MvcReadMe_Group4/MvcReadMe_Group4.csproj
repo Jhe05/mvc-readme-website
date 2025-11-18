@@ -4,15 +4,22 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Avoid duplicate generated assembly attributes when building solution-wide -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <!-- Prevent SDK from auto-generating the TargetFrameworkAttribute (can cause duplicates) -->
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+        <PackageReference Include="MySqlConnector" Version="2.4.0" />
   </ItemGroup>
 
 </Project>

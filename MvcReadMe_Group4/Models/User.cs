@@ -6,11 +6,23 @@ namespace MvcReadMe_Group4.Models
     {
         public int Id { get; set; }
 
-        [Required]       
-        public string UserName { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string FirstName { get; set; } = string.Empty;
 
         [Required]
-        private string _password;
+        [StringLength(50)]
+        public string LastName { get; set; } = string.Empty;
+
+        [Required]       
+        public required string UserName { get; set; }
+
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        private string _password = "";
         public string Password 
         { 
             get { return _password; }
@@ -24,5 +36,7 @@ namespace MvcReadMe_Group4.Models
             get { return _role; }
             set { _role = value; }
         }
+
+        public string? AvatarPath { get; set; }
     }
 }

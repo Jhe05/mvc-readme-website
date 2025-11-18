@@ -4,6 +4,12 @@
 }
 
 <style>
+    body {
+        background-color: #12001c;
+        margin: 0;
+        padding: 0;
+    }
+
     .developers-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -17,10 +23,10 @@
     .dev-card {
         display: flex;
         flex-direction: column;
-        background-color: #1a2029;
+        background-color: #24132f; /* dark purple card background */
         border-radius: 20px;
         padding: 40px 35px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* subtle dark shadow */
         transition: transform 0.2s ease-in-out;
         align-items: center;
         text-align: center;
@@ -28,98 +34,88 @@
         min-height: 400px;
     }
 
-
         .dev-card:hover {
             cursor: default;
             transform: translateY(-5px);
-            box-shadow: 0 0 10px #359b9f;
+            box-shadow: 0 0 10px #a96be6; /* purple glow on hover */
         }
 
             .dev-card:hover .dev-role {
-                color: #359b9f;
+                color: #a96be6; /* purple highlight on hover */
             }
-
 
     .dev-image {
         width: 120px;
         height: 120px;
         border-radius: 50%;
         overflow: hidden;
-        background-color: #2f3542;
+        background-color: #351a46; /* deep purple frame */
         margin-bottom: 20px;
-        border: 3px solid #ffffff20;
+        border: 3px solid #ffffff20; /* subtle border */
     }
 
         .dev-image img {
-            width: 115px;
-            height: auto;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             object-position: center;
+            display: block;
             image-rendering: auto;
         }
 
     .dev-info {
-        color: #c9d1d9;
+        color: #d9c9e6; /* light lavender text */
     }
 
     .dev-name {
         font-size: 1.2rem;
         font-weight: bold;
-        color: #ffffff;
+        color: #f1e6ff; /* bright lavender name */
         margin-bottom: 5px;
     }
 
     .dev-role {
-        color: #8b949e;
+        color: #c0a6d9; /* soft purple-gray */
         font-size: 0.95rem;
         margin-bottom: 20px;
+        transition: color 0.2s ease-in-out;
     }
 
     .dev-desc {
         font-size: 0.9rem;
         line-height: 1.5;
+        color: #c0a6d9; /* match about page description color */
     }
 </style>
+
 
 <h2 class="text-white mb-4" style="color: #ebebeb; text-align: center; margin-top: 40px; font-weight: 700;">Meet the Developers</h2>
 
 <div class="developers-container">
     <div class="dev-card">
         <div class="dev-image">
-			<img src="~/assets/icon/jheris-icon.png" alt="Jheris">
+            <img src="@Url.Content("~/assets/icon/Venus.jpg")" alt="Venus" onerror="this.onerror=null;this.src='@Url.Content("~/assets/icon/default-avatar.svg")'" />
+        </div>
+        <div class="dev-info">
+            <div class="dev-name">Venus Irish R. Lagrimas</div>
+            <div class="dev-role">Database & Assets Manager</div>
+            <div class="dev-desc">
+                Venus managed the database structure and assisted in maintaining its integrity. He was also responsible for organizing and managing all assets needed for the website, including icons, images, e-books, and cover images. His contributions ensured that all resources were properly structured and accessible during development.
+            </div>
+        </div>
+    </div>
+
+    <div class="dev-card">
+        <div class="dev-image">
+            <img src="@Url.Content("~/assets/icon/Jheris-icon.png")" alt="Jheris" onerror="this.onerror=null;this.src='@Url.Content("~/assets/icon/default-avatar.svg")'" />
         </div>
         <div class="dev-info">
             <div class="dev-name">Jheris V. Tranate</div>
-            <div class="dev-role">Database & Assets Manager</div>
-            <div class="dev-desc">
-                Jheris managed the database structure and assisted in maintaining its integrity. He was also responsible for organizing and managing all assets needed for the website, including icons, images, e-books, and cover images. His contributions ensured that all resources were properly structured and accessible during development.
-            </div>
-        </div>
-    </div>
-
-    <div class="dev-card">
-        <div class="dev-image">
-            <img src="~/assets/icon/nicko-icon.png" alt="Nicko">
-        </div>
-        <div class="dev-info">
-            <div class="dev-name">Nicko James E. Barata</div>
             <div class="dev-role">Lead Developer, Full Stack</div>
             <div class="dev-desc">
-                Nicko led both front-end and back-end development. He built the front-end with Razor Pages, Bootstrap, custom CSS styling, and Javascript interactive features to create a modern, user-friendly interface. On the backend, he developed the models and core logic in C#, handling data flow and integrating controllers to ensure smooth functionality.
+                Jheris led both front-end and back-end development. He built the front-end with Razor Pages, Bootstrap, custom CSS styling, and Javascript interactive features to create a modern, user-friendly interface. On the backend, he developed the models and core logic in C#, handling data flow and integrating controllers to ensure smooth functionality.
             </div>
         </div>
     </div>
 
-    <div class="dev-card">
-        <div class="dev-image">
-            <img src="~/assets/icon/reinald-icon.png" alt="Reinald">
-        </div>
-        <div class="dev-info">
-            <div class="dev-name">Reinald Luis F. Amposta</div>
-            <div class="dev-role">Quality Assurance & Tester</div>
-            <div class="dev-desc">
-                Reinald conducted thorough testing to find bugs and glitches in the system. He worked closely with the team to verify fixes and improve overall software stability and user experience before deployment. His keen attention to detail ensured that the platform met quality standards and delivered a smooth experience for users.
-            </div>
-        </div>
-    </div>
-</div>
+  

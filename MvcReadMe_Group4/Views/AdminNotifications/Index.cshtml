@@ -1,0 +1,77 @@
+@model IEnumerable<MvcReadMe_Group4.ViewModels.AdminNotificationViewModel>
+
+@{
+    ViewData["Title"] = "Admin Notifications";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div>
+    <h2>Admin Notifications</h2>
+    <p class="text-muted">Latest persisted admin notifications (from MySQL).</p>
+
+    <div class="list-group">
+        @if (!Model.Any())
+        {
+            <div class="alert alert-secondary">No notifications found.</div>
+        }
+        else
+        {
+            foreach (var n in Model)
+            {
+                <div class="list-group-item d-flex justify-content-between align-items-start" data-notif-id="@n.Id">
+                    <div>
+                        <div class="fw-bold">@n.Message</div>
+                        <small class="text-muted">@n.CreatedAt?.ToLocalTime().ToString("yyyy-MM-dd HH:mm:ss")</small>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                        <small class="text-muted">ID: @n.Id</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary mark-read-btn" data-id="@n.Id" title="Mark as read">&times;</button>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+<script>
+    (function () {
+        const markReadUrl = '@Url.Action("MarkRead", "AdminNotifications")';
+        const countUrl = '@Url.Action("GetCount", "AdminNotifications")';
+        const badge = document.getElementById('adminNotificationBadge');
+
+        async function updateBadgeFromServer() {
+            try {
+                const resp = await fetch(countUrl, { credentials: 'same-origin' });
+                if (!resp.ok) return;
+                const pj = await resp.json();
+                if (pj && typeof pj.count === 'number') {
+                    if (pj.count > 0) {
+                        badge.style.display = 'inline-block';
+                        badge.innerText = pj.count > 99 ? '99+' : String(pj.count);
+                    } else {
+                        badge.style.display = 'none';
+                        badge.innerText = '0';
+                    }
+                }
+            } catch (e) { }
+        }
+
+        document.querySelectorAll('.mark-read-btn').forEach(btn => {
+            btn.addEventListener('click', async function (e) {
+                e.stopPropagation();
+                const id = btn.getAttribute('data-id');
+                if (!id) return;
+                try {
+                    const resp = await fetch(markReadUrl + '?id=' + encodeURIComponent(id), { method: 'POST', credentials: 'same-origin' });
+                    if (!resp.ok) return;
+                    const pj = await resp.json();
+                    if (pj && pj.success) {
+                        const item = btn.closest('[data-notif-id]');
+                        if (item) item.remove();
+                        // refresh badge count from server
+                        updateBadgeFromServer();
+                    }
+                } catch (e) { }
+            });
+        });
+    })();
+</script>

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj": {}
+    "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj": {
+    "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj",
+        "projectUniqueName": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj",
         "projectName": "MvcReadMe_Group4",
-        "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\obj\\",
+        "projectPath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\MvcReadMe_Group4.csproj",
+        "packagesPath": "C:\\Users\\Trana\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Trana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,12 +44,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -62,6 +65,14 @@
               "version": "[9.0.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[9.0.0, )"
             }
@@ -85,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

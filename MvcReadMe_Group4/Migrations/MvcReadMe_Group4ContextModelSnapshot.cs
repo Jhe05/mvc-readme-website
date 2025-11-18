@@ -65,6 +65,9 @@ namespace MvcReadMe_Group4.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("BookId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("ReadCount")
                         .HasColumnType("INTEGER");
 
@@ -73,7 +76,63 @@ namespace MvcReadMe_Group4.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BookId");
+
                     b.ToTable("BookReads");
+                });
+
+            modelBuilder.Entity("MvcReadMe_Group4.Models.Comment", b =>
+                {
+                    b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("CommentText")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsHidden")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Comments");
+                });
+
+            modelBuilder.Entity("MvcReadMe_Group4.Models.Favorite", b =>
+                {
+                    b.Property<int>("FavoriteId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("BookId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("FavoriteId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Favorites");
                 });
 
             modelBuilder.Entity("MvcReadMe_Group4.Models.User", b =>
@@ -81,6 +140,23 @@ namespace MvcReadMe_Group4.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("AvatarPath")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -99,6 +175,55 @@ namespace MvcReadMe_Group4.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MvcReadMe_Group4.Models.BookRead", b =>
+                {
+                    b.HasOne("MvcReadMe_Group4.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+                });
+
+            modelBuilder.Entity("MvcReadMe_Group4.Models.Comment", b =>
+                {
+                    b.HasOne("MvcReadMe_Group4.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MvcReadMe_Group4.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("MvcReadMe_Group4.Models.Favorite", b =>
+                {
+                    b.HasOne("MvcReadMe_Group4.Models.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MvcReadMe_Group4.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

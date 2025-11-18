@@ -13,19 +13,19 @@
     }
 
     .delete-card {
-        background-color: #1a2029;
+        background-color: #1a1829; /* deep dark purple background */
         border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-        color: #fff;
+        box-shadow: 0 0 30px rgba(128, 0, 128, 0.4); /* purple glow */
+        color: #e6e6f0;
     }
 
     .card-header-text {
-        background-color: #8e1b1b;
+        background-color: #6a0dad; /* royal purple header */
         color: #fff;
         padding: 15px;
         font-size: 25px;
         font-weight: bold;
-        border-bottom: 1px solid #761515;
+        border-bottom: 1px solid #5b0b9a;
         text-align: center;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -38,29 +38,33 @@
     .dl-horizontal dt {
         font-weight: bold;
         width: 30%;
+        color: #d4bfff; /* light lavender text */
     }
 
     .dl-horizontal dd {
         margin-bottom: 20px;
+        color: #cfc6e0;
     }
 
     .btn-delete {
-        background-color: #a61f1f;
+        background-color: #7b2cbf; /* vibrant purple button */
         color: white;
         padding: 12px 30px;
         border-radius: 10px;
         border: none;
         font-size: 1.1rem;
         transition: background-color 0.3s ease;
+        box-shadow: 0 4px 12px rgba(123, 44, 191, 0.4);
     }
 
         .btn-delete:hover {
-            background-color: #8c1919;
+            background-color: #6a1faf; /* darker hover purple */
+            box-shadow: 0 4px 14px rgba(123, 44, 191, 0.6);
         }
 
     .btn-secondary-custom {
         background-color: transparent;
-        color: #cc7c35;
+        color: #b68cff; /* soft violet text */
         border: none;
         font-weight: bold;
         font-size: 1.05rem;
@@ -68,7 +72,7 @@
     }
 
         .btn-secondary-custom:hover {
-            color: #e67e22;
+            color: #d1a3ff; /* lighter violet on hover */
         }
 
     .button-row {
@@ -78,6 +82,7 @@
         margin-top: 30px;
     }
 </style>
+
 
 <div class="container delete-wrapper">
     <div class="row justify-content-center">
@@ -92,8 +97,7 @@
                         <dt class="col-sm-4">@Html.DisplayNameFor(model => model.UserName)</dt>
                         <dd class="col-sm-8">@Html.DisplayFor(model => model.UserName)</dd>
 
-                        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Password)</dt>
-                        <dd class="col-sm-8">*******</dd>
+                        <!-- Password is not shown to admins for security reasons -->
                     </dl>
 
                     <form asp-action="Delete">

@@ -7,27 +7,29 @@ namespace MvcReadMe_Group4.Models
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = string.Empty;
 
         [Required]
-        public string Author { get; set; }
-
-        public string Category { get; set; }
-
-        public string Description { get; set; }
+        public string Author { get; set; } = string.Empty;
 
         [Required]
-        public string ISBN { get; set; }
+        public string Category { get; set; } = string.Empty;
 
         [Required]
-        private string _filePath;
+        public string Description { get; set; } = string.Empty;
+
+        [Required]
+        public string ISBN { get; set; } = string.Empty;
+
+        [Required]
+        private string _filePath = string.Empty;
         public string FilePath 
         { 
             get { return _filePath; }
             set { _filePath = value; }
         }
 
-        private string _coverImagePath;
+        private string _coverImagePath = string.Empty;
         public string CoverImagePath 
         { 
             get { return _coverImagePath; }

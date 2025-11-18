@@ -31,15 +31,31 @@ namespace YourProjectNamespace.Controllers
             var totalReads = await _context.Books.SumAsync(b => b.NumberOfReads);
             ViewBag.TotalReads = totalReads;
 
-            // Get daily reads for the past week
+            // Get daily reads for the past week with proper date range handling
             var today = DateTime.Today;
-            var dailyReads = await _context.BookReads
-                .Where(br => br.ReadDate >= today.AddDays(-6) && br.ReadDate <= today)
-                .OrderBy(x => x.ReadDate)
-                .Select(br => new { Date = br.ReadDate, Count = br.ReadCount })
-                .ToListAsync();
+            var lastWeek = today.AddDays(-6);
+            
+            // Create full date range to ensure we have all dates
+            var dateRange = Enumerable.Range(0, 7)
+                .Select(offset => lastWeek.AddDays(offset))
+                .ToList();
 
-            ViewBag.DailyReads = dailyReads;
+            // Get actual reads data
+            var readsData = await _context.BookReads
+                .Where(br => br.ReadDate >= lastWeek && br.ReadDate <= today)
+                .GroupBy(br => br.ReadDate.Date)
+                .Select(g => new { Date = g.Key, Count = g.Sum(br => br.ReadCount) })
+                .ToDictionaryAsync(x => x.Date, x => x.Count);
+
+            // Combine with date range to ensure we have all dates (fill gaps with 0)
+            var dailyReads = dateRange.Select(date => new
+            {
+                Date = date.ToString("MMM dd"),
+                Count = readsData.GetValueOrDefault(date.Date, 0)
+            }).ToList();
+
+            ViewBag.DailyReadsLabels = dailyReads.Select(x => x.Date).ToList();
+            ViewBag.DailyReadsCounts = dailyReads.Select(x => x.Count).ToList();
 
             // Get category distribution
             var categoryDistribution = await _context.Books
@@ -87,13 +103,28 @@ namespace YourProjectNamespace.Controllers
             // Get total reads
             var totalReads = await _context.Books.SumAsync(b => b.NumberOfReads);
 
-            // Get daily reads for the past week
+            // Get daily reads for the past week with proper date range handling
             var today = DateTime.Today;
-            var dailyReads = await _context.BookReads
-                .Where(br => br.ReadDate >= today.AddDays(-6) && br.ReadDate <= today)
-                .OrderBy(x => x.ReadDate)
-                .Select(br => new { date = br.ReadDate, count = br.ReadCount })
-                .ToListAsync();
+            var lastWeek = today.AddDays(-6);
+            
+            // Create full date range to ensure we have all dates
+            var dateRange = Enumerable.Range(0, 7)
+                .Select(offset => lastWeek.AddDays(offset))
+                .ToList();
+
+            // Get actual reads data
+            var readsData = await _context.BookReads
+                .Where(br => br.ReadDate >= lastWeek && br.ReadDate <= today)
+                .GroupBy(br => br.ReadDate.Date)
+                .Select(g => new { date = g.Key, count = g.Sum(br => br.ReadCount) })
+                .ToDictionaryAsync(x => x.date, x => x.count);
+
+            // Combine with date range to ensure we have all dates (fill gaps with 0)
+            var dailyReads = dateRange.Select(date => new
+            {
+                date = date.ToString("MMM dd"),
+                count = readsData.GetValueOrDefault(date.Date, 0)
+            }).ToList();
 
             // Get category distribution
             var categoryDistribution = await _context.Books

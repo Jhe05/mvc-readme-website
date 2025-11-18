@@ -9,11 +9,11 @@
     .table-container {
         max-height: 74vh;
         overflow-y: auto;
-        border: 1px solid #3d4554;
-        border-top: 2px solid #359b9f;
-        border-bottom: 2px solid #3d4554;
+        border: 1px solid #4b3a5d; /* Purple border */
+        border-top: 2px solid #9b59b6; /* Main purple accent */
+        border-bottom: 2px solid #4b3a5d;
         scrollbar-width: thin;
-        scrollbar-color: #555 transparent;
+        scrollbar-color: #7d5fa3 transparent;
         border-radius: 15px;
     }
 
@@ -23,7 +23,7 @@
         border-collapse: collapse;
         background-color: #2b2f38;
         table-layout: fixed;
-        border-top: 2px solid #359b9f;
+        border-top: 2px solid #9b59b6; /* Purple accent */
         border-radius: 15px;
     }
 
@@ -33,10 +33,10 @@
             font-weight: 700;
             text-align: center;
             padding: 14px;
-            border-top: 2px solid #359b9f;
-            border-left: 1px solid #3d4554;
-            border-right: 1px solid #3d4554;
-            border-bottom: 1px solid #3d4554;
+            border-top: 2px solid #9b59b6;
+            border-left: 1px solid #4b3a5d;
+            border-right: 1px solid #4b3a5d;
+            border-bottom: 1px solid #4b3a5d;
             position: sticky;
             top: 0;
             z-index: 1;
@@ -45,7 +45,7 @@
         }
 
             .table-dark thead th.sortable:hover {
-                background-color: #2d313a;
+                background-color: #3a2f4d; /* Hover purple shade */
             }
 
             .table-dark thead th.sorted-asc::after {
@@ -59,10 +59,10 @@
             }
 
         .table-dark tbody td {
-            padding: 9px 12px 9px 12px;
+            padding: 9px 12px;
             text-align: center;
             color: #f0f0f0;
-            border: 1px solid #3d4554;
+            border: 1px solid #4b3a5d;
             vertical-align: middle;
             word-wrap: break-word;
         }
@@ -81,35 +81,35 @@
 
     .icon-btn {
         font-size: 14px;
-        padding: 8px 10px 8px 10px;
+        padding: 8px 10px;
         border-radius: 6px;
         color: white;
         text-decoration: none;
     }
 
+    /* Action Buttons with Purple Touch */
     .icon-view {
-        background-color: #3498db;
+        background-color: #7b68ee; /* Light purple/blue */
     }
 
         .icon-view:hover {
-            background-color: #2980b9;
+            background-color: #5a4cc9;
         }
 
     .icon-edit {
-        background-color: #f39c12;
-
+        background-color: #9b59b6; /* Medium purple */
     }
 
         .icon-edit:hover {
-            background-color: #e67e22;
+            background-color: #8e44ad;
         }
 
     .icon-delete {
-        background-color: #e74c3c;
+        background-color: #c0392b; /* Keep delete red */
     }
 
         .icon-delete:hover {
-            background-color: #c0392b;
+            background-color: #a93226;
         }
 
     .btn-viewfile {
@@ -118,6 +118,7 @@
         border-radius: 5px;
     }
 
+    /* Scrollbar styling */
     .table-container::-webkit-scrollbar {
         width: 8px;
     }
@@ -127,26 +128,25 @@
     }
 
     .table-container::-webkit-scrollbar-thumb {
-        background-color: #555;
+        background-color: #7d5fa3;
         border-radius: 10px;
     }
 
         .table-container::-webkit-scrollbar-thumb:hover {
-            background-color: #777;
+            background-color: #9b59b6;
         }
-
 
     .header-bar {
         display: flex;
         justify-content: space-between;
-        align-items: center; 
+        align-items: center;
         margin-bottom: 30px;
     }
 
         .header-bar > h1 {
             margin: 0;
             font-size: 36px;
-            
+            color: #c8a2ff; /* Light purple heading */
         }
 
         .header-bar > div {
@@ -160,20 +160,22 @@
         font-size: 16px;
         padding: 7px 10px;
         border-radius: 5px;
-        background-color: #37414f;
+        background-color: #3d3550;
         color: white;
-        border: 1px solid #444;
+        border: 1px solid #5e4c7f;
         width: 270px;
     }
 
         .search-input:focus {
             outline: none;
+            border-color: #9b59b6;
+            box-shadow: 0 0 5px #9b59b6;
         }
 
     .add-button {
         padding: 7px 10px;
         font-size: 16px;
-        background-color: #27ae60;
+        background-color: #8e44ad; /* Add button purple */
         color: white;
         border-radius: 5px;
         text-decoration: none;
@@ -181,49 +183,51 @@
     }
 
         .add-button:hover {
-            background-color: #2ecc71;
+            background-color: #732d91;
         }
 
     body {
         overflow-x: hidden;
     }
 
+    /* Column widths */
     .table-dark th:nth-child(1), .table-dark td:nth-child(1) {
-        width: 10%; /* Cover column */
+        width: 10%;
     }
 
     .table-dark th:nth-child(2), .table-dark td:nth-child(2) {
-        width: 21%; /* Title column */
+        width: 21%;
     }
 
     .table-dark th:nth-child(3), .table-dark td:nth-child(3) {
-        width: 20%; /* Author column */
+        width: 20%;
     }
 
     .table-dark th:nth-child(4), .table-dark td:nth-child(4) {
-        width: 15%; /* Category column */
+        width: 15%;
     }
 
     .table-dark th:nth-child(5), .table-dark td:nth-child(5) {
-        width: 20%; /* Description column */
+        width: 20%;
     }
 
     .table-dark th:nth-child(6), .table-dark td:nth-child(6) {
-        width: 16%; /* ISBN column */
+        width: 16%;
     }
 
     .table-dark th:nth-child(7), .table-dark td:nth-child(7) {
-        width: 10%; /* File column */
+        width: 10%;
     }
 
     .table-dark th:nth-child(8), .table-dark td:nth-child(8) {
-        width: 10%; /* Number of Reads column */
+        width: 10%;
     }
 
     .table-dark th:nth-child(9), .table-dark td:nth-child(9) {
-        width: 18%; /* Actions column */
+        width: 18%;
     }
 </style>
+
 
 <!-- Header with Flexbox for Title, Search, and Add Book -->
 <div class="header-bar">

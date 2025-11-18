@@ -1,11 +1,20 @@
-﻿@{
+﻿@using System.Linq
+
+@{
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <style>
+    body {
+        background-color: #12001c;
+        margin: 0;
+        padding: 0;
+    }
+
     .dashboard-container {
         padding: 10px 15px;
+        background-color: #12001c; /* very dark purple page background */
     }
 
     .main-grid {
@@ -27,10 +36,10 @@
     }
 
     .stat-card {
-        background-color: #1a2029;
+        background-color: #24132f; /* dark purple card background */
         border-radius: 11px;
         padding: 14px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* soft dark shadow */
         transition: transform 0.2s ease;
     }
 
@@ -49,47 +58,77 @@
         font-size: 20px;
     }
 
+        /* Adjusted with purple accent tints */
         .stat-icon.users {
-            background-color: #359b9f33;
-            color: #359b9f;
+            background-color: #a96be633; /* light purple tint */
+            color: #a96be6;
         }
 
         .stat-icon.books {
-            background-color: #c27a1d33;
+            background-color: #c27a1d33; /* keep orange for contrast */
             color: #c27a1d;
         }
 
         .stat-icon.reads {
-            background-color: #19755033;
-            color: #197550;
+            background-color: #7d4bc833; /* medium purple tint */
+            color: #7d4bc8;
         }
 
     .stat-value {
         font-size: 24px;
         font-weight: bold;
-        color: #ffffff;
+        color: #f1e6ff; /* light lavender text */
         margin-bottom: 5px;
     }
 
     .stat-label {
-        color: #c9d1d9;
+        color: #d9c9e6; /* soft lavender-gray */
         font-size: 13px;
     }
 
     .chart-container {
-        background-color: #1a2029;
+        background-color: #24132f; /* dark purple chart container */
         border-radius: 11px;
-        padding: 14px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 14px 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         height: 320px;
         margin-bottom: 40px;
+        position: relative;
+    }
+
+    .chart-wrapper {
+        height: calc(100% - 40px);
+        position: relative;
+    }
+
+    .chart-title {
+        color: #f1e6ff;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    .no-data-message {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #d9c9e6;
+        font-size: 1.1rem;
+        text-align: center;
+        animation: fadeInOut 2s ease-in-out infinite;
+    }
+
+    @@keyframes fadeInOut {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
     }
 
     .pie-chart-container {
-        background-color: #1a2029;
+        background-color: #24132f; /* match dark purple cards */
         border-radius: 11px;
         padding: 14px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         display: flex;
         flex-direction: column;
         height: 47vh;
@@ -105,18 +144,18 @@
         justify-content: center;
     }
 
-    .chart-wrapper canvas {
-        max-width: 90%;
-        max-height: 90%;
-    }
+        .chart-wrapper canvas {
+            max-width: 90%;
+            max-height: 90%;
+        }
 
     .section-title {
-        color: #c9d1d9;
+        color: #d9c9e6; /* lavender headings */
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 14px;
         padding-bottom: 7px;
-        border-bottom: 1px solid #2d3748;
+        border-bottom: 1px solid #372346; /* subtle purple border */
     }
 
     .legend-container {
@@ -127,10 +166,27 @@
         padding: 0 9px 9px 9px;
     }
 
+    /* Libroverse-like themed button */
+    .libroverse-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(90deg,#ff8a00 0%,#7d4bc8 100%);
+        color: #fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 600;
+        box-shadow: 0 8px 20px rgba(125,75,200,0.18);
+        transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+    }
+    .libroverse-btn i { font-size: 1.05rem; }
+    .libroverse-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(125,75,200,0.22); opacity: 0.98; }
+
     .legend-item {
         display: flex;
         align-items: center;
-        color: #c9d1d9;
+        color: #d9c9e6;
         font-size: 13px;
         margin-bottom: 0;
     }
@@ -148,12 +204,12 @@
     }
 
     .popular-books-title {
-        color: #c9d1d9;
+        color: #d9c9e6;
         font-size: 16px;
         font-weight: 600;
         margin-bottom: 14px;
         padding-bottom: 7px;
-        border-bottom: 1px solid #2d3748;
+        border-bottom: 1px solid #372346; /* subtle purple border */
     }
 
     .popular-books-grid {
@@ -183,12 +239,17 @@
         .main-grid {
             grid-template-columns: 1fr;
         }
+    {
+        grid-template-columns: 1fr;
+    }
 
-        .popular-books-grid {
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        }
+    .popular-books-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
     }
 </style>
+
 
 <div class="dashboard-container">
     <div class="main-grid">
@@ -218,14 +279,35 @@
             </div>
 
             <div class="chart-container">
-                <div class="section-title">Daily Reads (Past Week)</div>
-                <canvas id="dailyReadsChart"></canvas>
+                <div class="chart-title">Daily Reads (Past Week)</div>
+                <div class="chart-wrapper">
+                    <canvas id="dailyReadsChart"></canvas>
+                    @{
+                        var hasData = false;
+                        if (ViewBag.DailyReadsCounts != null)
+                        {
+                            foreach (var count in ViewBag.DailyReadsCounts)
+                            {
+                                if ((int)count > 0)
+                                {
+                                    hasData = true;
+                                    break;
+                                }
+                            }
+                        }
+                        if (!hasData)
+                        {
+                            <div class="no-data-message">No reading activity recorded in the past week</div>
+                        }
+                    }
+                </div>
             </div>
         </div>
 
         <div class="right-column">
             <div class="pie-chart-container">
                 <div class="section-title">Book Categories</div>
+                <!-- Generate Report button moved below categories (styled like Libroverse) -->
                 <div class="chart-wrapper">
                     <canvas id="categoryPieChart"></canvas>
                 </div>
@@ -237,6 +319,12 @@
                             <span>@category.Category (@category.Count)</span>
                         </div>
                     }
+                </div>
+                <div style="display:flex; justify-content:center; margin-top:14px;">
+                    <a class="libroverse-btn" target="_blank" href="http://localhost/php_sql/admin_report.php?mode=today">
+                        <i class="bi bi-file-earmark-pdf"></i>
+                        <span>Generate Report</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -254,7 +342,7 @@
 </div>
 
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
     <script>
         let dailyReadsChart;
         let categoryPieChart;
@@ -293,31 +381,33 @@
 
         // Daily Reads Chart
         const dailyReadsCtx = document.getElementById('dailyReadsChart').getContext('2d');
-        const dailyReadsData = @Html.Raw(Json.Serialize(ViewBag.DailyReads));
-
+        
         // Create gradient for the fill
-        const gradient = dailyReadsCtx.createLinearGradient(0, 0, 0, 400);
-        gradient.addColorStop(0, 'rgba(53, 155, 159, 0.2)');
-        gradient.addColorStop(1, 'rgba(53, 155, 159, 0)');
+        const gradient = dailyReadsCtx.createLinearGradient(0, 0, 0, 300);
+        gradient.addColorStop(0, 'rgba(125, 75, 200, 0.25)');  // Purple to match theme
+        gradient.addColorStop(1, 'rgba(125, 75, 200, 0.02)');
+
+        const labels = @(Html.Raw(Json.Serialize(ViewBag.DailyReadsLabels ?? new string[0])));
+        const data = @(Html.Raw(Json.Serialize(ViewBag.DailyReadsCounts ?? new int[0])));
 
         dailyReadsChart = new Chart(dailyReadsCtx, {
             type: 'line',
             data: {
-                labels: dailyReadsData.map(d => new Date(d.date).toLocaleDateString('en-US', { weekday: 'short' })),
+                labels: labels,
                 datasets: [{
                     label: 'Daily Reads',
-                    data: dailyReadsData.map(d => d.count),
-                    borderColor: '#359b9f',
-                    borderWidth: 3,
+                    data: data,
+                    borderColor: '#7d4bc8',  // Purple to match theme
+                    borderWidth: 2.5,
                     backgroundColor: gradient,
-                    tension: 0.4,
+                    tension: 0.35,
                     fill: true,
-                    pointBackgroundColor: '#359b9f',
+                    pointBackgroundColor: '#7d4bc8',
                     pointBorderColor: '#ffffff',
                     pointBorderWidth: 2,
-                    pointRadius: 6,
-                    pointHoverRadius: 8,
-                    pointHoverBackgroundColor: '#359b9f',
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                    pointHoverBackgroundColor: '#7d4bc8',
                     pointHoverBorderColor: '#ffffff',
                     pointHoverBorderWidth: 2,
                     pointStyle: 'circle'
@@ -335,17 +425,21 @@
                         display: false
                     },
                     tooltip: {
-                        backgroundColor: '#1a2029',
-                        titleColor: '#ffffff',
-                        bodyColor: '#c9d1d9',
-                        borderColor: '#2d3748',
+                        backgroundColor: '#24132f',
+                        titleColor: '#f1e6ff',
+                        bodyColor: '#d9c9e6',
+                        borderColor: '#372346',
                         borderWidth: 1,
                         padding: 12,
                         cornerRadius: 8,
                         displayColors: false,
                         callbacks: {
+                            title: function(tooltipItems) {
+                                return tooltipItems[0].label;
+                            },
                             label: function(context) {
-                                return `Reads: ${context.raw}`;
+                                const reads = context.raw;
+                                return `${reads} ${reads === 1 ? 'Read' : 'Reads'}`;
                             }
                         }
                     }
@@ -354,17 +448,21 @@
                     y: {
                         beginAtZero: true,
                         grid: {
-                            color: '#2d3748',
+                            color: '#372346',
                             drawBorder: false,
-                            lineWidth: 1
+                            lineWidth: 0.5
                         },
                         ticks: {
-                            color: '#8b949e',
-                            stepSize: 5,
+                            color: '#d9c9e6',
+                            stepSize: 1,
                             font: {
-                                size: 11
+                                size: 12,
+                                family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
                             },
-                            padding: 10
+                            padding: 8,
+                            callback: function(value) {
+                                return value === Math.floor(value) ? value : '';
+                            }
                         },
                         border: {
                             display: false
@@ -375,11 +473,12 @@
                             display: false
                         },
                         ticks: {
-                            color: '#8b949e',
+                            color: '#d9c9e6',
                             font: {
-                                size: 11
+                                size: 12,
+                                family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
                             },
-                            padding: 10
+                            padding: 8
                         },
                         border: {
                             display: false
@@ -387,7 +486,7 @@
                     }
                 },
                 animation: {
-                    duration: 1000,
+                    duration: 750,
                     easing: 'easeOutQuart'
                 }
             }

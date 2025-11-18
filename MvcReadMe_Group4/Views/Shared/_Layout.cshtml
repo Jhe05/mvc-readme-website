@@ -1,82 +1,275 @@
-﻿@{
+@{
     Layout = null;
 }
+@inject Microsoft.AspNetCore.Antiforgery.IAntiforgery Antiforgery
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ReadMe</title>
+    <title>@ViewData["Title"] - LibroVerse</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <meta name="csrf-token" content="@Antiforgery.GetAndStoreTokens(Context).RequestToken" />
     <style>
+        @@keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
         body {
-            background-color: #0a0f1a;
-            color: #c9d1d9;
+            background-color: #140a1a;
+            color: #d5c9e6;
             font-family: 'Segoe UI', sans-serif;
             margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .topbar {
-            width: calc(100% - 40px);
-            margin: 10px 20px 0 20px;
-            background-color: #16202e;
+            background-color: #2b1b3d;
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-size: 1.4rem;
             font-weight: 600;
-            border-radius: 8px;
-            color: white;
+            color: #f0e6ff;
+            box-shadow: 0 4px 12px rgba(128, 0, 128, 0.35);
         }
 
-            .topbar .brand {
-                font-size: 1.5rem;
-                font-weight: bold;
-                color: #ffffff;
-                margin-left: 32px;
-                text-align: center;
-            }
+        .topbar .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #cda4ff;
+        }
 
         .content {
-            padding: 30px 30px;
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Notification Bell Styles */
+        .notification-bell {
+            position: relative;
+            cursor: pointer;
+            margin-right: 20px;
+            padding: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .notification-bell:hover {
+            transform: scale(1.1);
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #ff4081;
+            color: white;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            display: none;
+        }
+
+        .notification-badge.active {
+            display: block;
+        }
+
+        .notification-panel {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 320px;
+            background-color: #140a1a;
+            border: 1px solid #7d4bc8;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1000;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .notification-panel.show {
+            display: block;
+            animation: slideDown 0.3s ease-out;
+        }
+
+        @@keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .notification-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid #7d4bc8;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #1b0e29;
+        }
+
+        .notification-list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .notification-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(125, 75, 200, 0.2);
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .notification-item:hover {
+            background-color: #1b0e29;
+        }
+
+        .book-thumbnail {
+            width: 40px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .notification-content {
+            flex: 1;
+        }
+
+        .notification-title {
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .notification-meta {
+            color: #9d87b7;
+            font-size: 0.8rem;
+        }
+
+        .notification-reads {
+            color: #b388ff;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .timestamp {
+            color: #6b617d;
+            font-size: 0.75rem;
+            margin-top: 4px;
         }
 
         .main-container {
-            background-color: #0a0f1a;
-            padding: 15px 30px;
+            flex: 1;
+            background-color: #1b1027;
+            padding: 20px;
             border-radius: 10px;
-            min-height: 80vh;
+            box-shadow: 0 6px 14px rgba(90, 40, 130, 0.35);
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logout-btn {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            color: hotpink;
         }
 
         @@media (max-width: 768px) {
             .topbar {
                 flex-direction: column;
                 align-items: flex-start;
-                font-size: 1.2rem;
-                padding: 10px 15px;
-                margin: 0;
-                border-radius: 0;
+                gap: 10px;
+                padding: 15px;
             }
         }
     </style>
+
 </head>
 <body>
     <div class="topbar">
         <div class="brand">
-            <a href="/User/Home" style="color: white; text-decoration: none;">
-                <i class="fas fa-book" style="color: #4a90e2;"></i>&nbsp;&nbsp;ReadMe
+            <a href="/User/Home" style="color: hotpink; text-decoration: none;">
+                <i class="fas fa-book" style="color: hotpink;"></i>&nbsp;&nbsp;LibroVerse
             </a>
         </div>
-        <div>
+        <div class="d-flex align-items-center gap-4">
+            <div class="notification-bell" id="notificationBell" style="position:relative;">
+                <i class="fas fa-bell" style="color: #cda4ff;"></i>
+                <span class="notification-badge"></span>
+                <div class="notification-panel">
+                    <div class="notification-header">
+                        <i class="fas fa-chart-line" style="margin-right: 8px;"></i>
+                        Trending Books
+                    </div>
+                    <div class="notification-list">
+                        <!-- Notifications will be inserted here -->
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="nav-favorite" title="Favorites" style="color: #ccc; text-decoration: none; font-size: 18px; display:flex; align-items:center; gap:6px; position:relative;">
+                <i id="nav-favorite-heart" class="fa-regular fa-heart" style="font-size:18px; color:#ccc;"></i>
+                <span id="fav-count" style="position:absolute; top:-6px; right:-8px; background:#ff3b5c; color:#fff; font-size:10px; width:18px; height:18px; display:none; border-radius:50%; align-items:center; justify-content:center; display:flex;"></span>
+            </a>
             <a asp-controller="Account" asp-action="Logout" style="color: #c9d1d9; text-decoration: none; font-size: 18px">
                 <i class="bi bi-box-arrow-right"></i> Logout
             </a>
         </div>
     </div>
+            <!-- Favorites modal -->
+            <div class="modal fade" id="favoritesModal" tabindex="-1" aria-labelledby="favoritesModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content" style="background:#1b1027; color:#e0dff0; border:1px solid #4b2f74;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="favoritesModalLabel">Your Favorites</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="favoritesModalBody">
+                            <div id="favorites-list" style="display:flex; flex-direction:column; gap:12px;"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <div class="content">
         <div class="main-container">
@@ -86,5 +279,310 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.10/signalr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <style>
+        .notifications-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 300px;
+            background-color: #2b1b3d;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            display: none;
+            z-index: 1000;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .notification-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .notification-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .notification-item .title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #e0e0e0;
+            margin-bottom: 4px;
+        }
+
+        .notification-item .message {
+            font-size: 13px;
+            color: #b388ff;
+        }
+
+        .notification-item .time {
+            font-size: 11px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .notifications-header {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .notifications-header h6 {
+            margin: 0;
+            color: #e0e0e0;
+        }
+
+        .clear-all {
+            font-size: 12px;
+            color: #b388ff;
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Configure toastr
+            toastr.options = {
+                "closeButton": true,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "timeOut": "5000"
+            };
+
+            // User notification bell: fetch most-read books from app API (no SignalR for users)
+            const userNotificationBell = document.getElementById('notificationBell');
+            const userNotificationPanel = userNotificationBell ? userNotificationBell.querySelector('.notification-panel') : null;
+            const userNotificationBadge = userNotificationBell ? userNotificationBell.querySelector('.notification-badge') : null;
+            const userNotificationList = userNotificationBell ? userNotificationBell.querySelector('.notification-list') : null;
+
+            async function fetchMostRead() {
+                try {
+                    const resp = await fetch('/api/notifications/most-read');
+                    if (!resp.ok) return [];
+                    const data = await resp.json();
+                    return Array.isArray(data) ? data : (data || []);
+                } catch (e) {
+                    console.warn('Failed to fetch most-read books', e);
+                    return [];
+                }
+            }
+
+            function renderMostRead(list) {
+                if (!userNotificationList) return;
+                userNotificationList.innerHTML = '';
+                if (!Array.isArray(list) || list.length === 0) {
+                    userNotificationList.innerHTML = '<div style="padding:12px; color:#c9c3e6;">No trending books right now.</div>';
+                    if (userNotificationBadge) userNotificationBadge.classList.remove('active');
+                    return;
+                }
+
+                list.forEach(book => {
+                    // Render each notification as an anchor so middle-click / open-in-new-tab works
+                    const link = document.createElement('a');
+                    // Use a relative href to the User controller BookDetails so navigation goes to the actual details page
+                    link.href = `/User/BookDetails?id=${book.bookId}`;
+                    link.className = 'notification-item d-flex';
+                    // expose book id for runtime updates
+                    link.dataset.bookId = book.bookId;
+                    link.style.textDecoration = 'none';
+                    link.style.color = 'inherit';
+                    link.innerHTML = `
+                        <img src="${book.coverImagePath || '/assets/img/default-book-cover.jpg'}" alt="${book.title}" class="book-thumbnail">
+                        <div class="notification-content">
+                            <div class="notification-title">${book.title}</div>
+                            <div class="notification-reads"><i class="fas fa-book-reader"></i> <span class="read-count" data-book-id="${book.bookId}">${book.totalReads}</span> reads</div>
+                            <div class="timestamp">${book.timeAgo || ''}</div>
+                        </div>
+                    `;
+
+                    // Optional: ensure single-page smoothness by preventing the panel from re-toggling
+                    link.addEventListener('click', function (e) {
+                        // Let normal navigation happen; close the panel quickly to avoid flicker
+                        if (userNotificationPanel) userNotificationPanel.classList.remove('show');
+                    });
+
+                    userNotificationList.appendChild(link);
+                });
+
+                if (userNotificationBadge) userNotificationBadge.classList.add('active');
+            }
+
+            // Toggle behavior for user bell
+            if (userNotificationBell && userNotificationPanel) {
+                userNotificationBell.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    userNotificationPanel.classList.toggle('show');
+                    if (userNotificationPanel.classList.contains('show')) {
+                        fetchMostRead().then(renderMostRead);
+                    }
+                });
+
+                document.addEventListener('click', function (e) {
+                    if (!userNotificationBell.contains(e.target)) {
+                        userNotificationPanel.classList.remove('show');
+                    }
+                });
+
+                // Refresh every 5 minutes in background
+                setInterval(async () => {
+                    const list = await fetchMostRead();
+                    renderMostRead(list);
+                }, 5 * 60 * 1000);
+            }
+
+            // Setup SignalR client connection to receive live updates (book read counts)
+            try {
+                const hubConnection = new signalR.HubConnectionBuilder()
+                    .withUrl('/notificationHub')
+                    .withAutomaticReconnect()
+                    .build();
+
+                hubConnection.on('BookReadUpdated', (bookId, totalReads) => {
+                    try {
+                        // update any visible read-count spans
+                        const selector = `.read-count[data-book-id=\"${bookId}\"]`;
+                        const els = document.querySelectorAll(selector);
+                        els.forEach(el => {
+                            el.textContent = totalReads;
+                        });
+                        // also update the badge if the panel is not open by refreshing list
+                        // (optimistic approach) -- if panel is visible, update displayed numbers; otherwise, leave as-is
+                    } catch (e) { console.warn('Error applying BookReadUpdated', e); }
+                });
+
+                hubConnection.start().catch(e => console.warn('SignalR start failed:', e));
+            } catch (e) {
+                console.warn('SignalR client not available', e);
+            }
+
+            // Favorites navbar + modal handling
+            async function fetchFavoritesForNav() {
+                try {
+                    const res = await fetch('/Favorites/GetAll', { credentials: 'same-origin' });
+                    if (!res.ok) {
+                        const txt = await res.text();
+                        console.error('GetAll returned non-OK:', res.status, txt);
+                        return { success: false };
+                    }
+                    return await res.json();
+                } catch (e) {
+                    console.error('Error fetching favorites:', e);
+                    return { success: false };
+                }
+            }
+
+            async function updateFavCount() {
+                const data = await fetchFavoritesForNav();
+                const countEl = document.getElementById('fav-count');
+                if (!countEl) return;
+                if (data.success && data.favorites && data.favorites.length > 0) {
+                    countEl.style.display = 'flex';
+                    countEl.textContent = data.favorites.length;
+                    document.getElementById('nav-favorite-heart').classList.remove('fa-regular');
+                    document.getElementById('nav-favorite-heart').classList.add('fa-solid');
+                } else {
+                    countEl.style.display = 'none';
+                    document.getElementById('nav-favorite-heart').classList.remove('fa-solid');
+                    document.getElementById('nav-favorite-heart').classList.add('fa-regular');
+                }
+            }
+
+            // Expose updateFavCount to other scripts (BookDetails) so they can refresh the navbar
+            window.updateFavCount = updateFavCount;
+
+            // Open modal and populate
+            document.getElementById('nav-favorite').addEventListener('click', async function (e) {
+                e.preventDefault();
+                const data = await fetchFavoritesForNav();
+                const list = document.getElementById('favorites-list');
+                const modalBody = document.getElementById('favoritesModalBody');
+                list.innerHTML = '';
+                if (!data.success || !data.favorites || data.favorites.length === 0) {
+                    list.innerHTML = '<div style="padding:18px; color:#c9c3e6;">You haven\'t added any favorites yet.</div>';
+                } else {
+                    data.favorites.forEach(f => {
+                        const item = document.createElement('div');
+                        item.className = 'd-flex align-items-center';
+                        item.style.gap = '12px';
+                        item.style.padding = '8px 4px';
+                        item.innerHTML = `
+                            <img src="${f.coverImagePath || '/assets/img/default-book-cover.jpg'}" style="width:56px; height:84px; object-fit:cover; border-radius:6px;" />
+                            <div style="flex:1;">
+                              <div style="font-weight:600; color:#fff;">${f.title}</div>
+                            </div>
+                            <div>
+                              <a href="/User/BookDetails?id=${f.bookId}" class="btn btn-sm btn-primary">Read Now</a>
+                            </div>
+                        `;
+                        item.addEventListener('click', () => {
+                            window.location.href = `/User/BookDetails?id=${f.bookId}`;
+                        });
+                        list.appendChild(item);
+                    });
+                }
+
+                // show bootstrap modal
+                var favModal = new bootstrap.Modal(document.getElementById('favoritesModal'));
+                favModal.show();
+            });
+
+            // Update count on load
+            updateFavCount();
+
+            function normalizeMessageHtml(html) {
+                const container = document.createElement('div');
+                container.innerHTML = html || '';
+                const anchors = container.querySelectorAll('a');
+                anchors.forEach(a => {
+                    try {
+                        const resolved = new URL(a.href, window.location.origin);
+                        // Normalize localhost/127.0.0.1 or same-host absolute URLs to relative paths
+                        if (resolved.hostname === 'localhost' || resolved.hostname === '127.0.0.1' || resolved.hostname === window.location.hostname) {
+                            a.setAttribute('href', resolved.pathname + resolved.search + resolved.hash);
+                            a.setAttribute('target', '_self');
+                        }
+                    } catch (e) {
+                        // ignore invalid URLs
+                    }
+                });
+                return container.innerHTML;
+            }
+
+            function updateNotifications() {
+                // Update badge
+                badge.text(notificationCount);
+                badge.toggle(notificationCount > 0);
+
+                // Update dropdown list
+                const list = $('.notifications-list');
+                list.empty();
+
+                notifications.slice().reverse().forEach(notification => {
+                    const timeAgo = moment(notification.time).fromNow();
+
+                    const $item = $('<div>').addClass('notification-item');
+                    const $title = $('<div>').addClass('title').text(notification.title || '');
+                    // Normalize any absolute URLs inside message HTML so links stay on current origin
+                    const normalizedMessage = normalizeMessageHtml(notification.message || '');
+                    const $message = $('<div>').addClass('message').html(normalizedMessage);
+                    const $time = $('<div>').addClass('time').text(timeAgo);
+
+                    $item.append($title, $message, $time);
+                    list.append($item);
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>

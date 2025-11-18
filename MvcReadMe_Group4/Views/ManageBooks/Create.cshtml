@@ -16,14 +16,14 @@
     }
 
     .form-container {
-        background-color: #1a2029;
+        background-color: #1a2029; /* dark base */
         border-radius: 0px 0px 20px 20px;
-        padding: 30px 70px 30px 70px;
+        padding: 30px 70px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     }
 
     .card-header-text {
-        background-color: #195f61;
+        background-color: #2b244a; /* deep purple header */
         color: #f0f0f0;
         text-align: center;
         padding: 20px;
@@ -43,24 +43,24 @@
     }
 
     .form-control {
-        background-color: #243040;
+        background-color: #2b3a55; /* dark violet input bg */
         color: #fff;
-        border: 1px solid #195f61;
+        border: 1px solid #7a3fff; /* purple border */
         border-radius: 8px;
-        padding: 8px 12px 8px 12px;
+        padding: 8px 12px;
         font-size: 1rem;
         transition: all 0.2s ease;
     }
 
         .form-control:focus {
-            background-color: #2b3a55;
+            background-color: #352a57; /* darker purple focus */
             color: #fff;
-            border-color: #359b9f;
-            box-shadow: 0 0 0 0.15rem rgba(53, 155, 159, 0.35);
+            border-color: #a86bff; /* light purple highlight */
+            box-shadow: 0 0 0 0.15rem rgba(168, 107, 255, 0.35);
         }
 
     .btn-create {
-        background-color: #197550;
+        background-color: #7a3fff; /* purple button */
         color: white;
         font-size: 1.2rem;
         padding: 12px 40px;
@@ -68,22 +68,25 @@
         border: none;
         cursor: pointer;
         margin-top: 40px;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
         .btn-create:hover {
-            background-color: #01804d;
+            background-color: #6c2edb; /* deeper purple hover */
+            box-shadow: 0 0 10px #7a3fff;
         }
 
     .text-center a {
-        color: #359b9f;
+        color: #b19cd9; /* soft lavender link */
         font-weight: bold;
+        transition: color 0.2s ease;
     }
 
         .text-center a:hover {
-            color: #1b6f71;
+            color: #7a3fff; /* vivid purple hover */
         }
 </style>
+
 
 <div class="scale-wrapper">
     <div class="container form-wrapper">

@@ -17,121 +17,133 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MvcReadMe_Group4
 build_property.RootNamespace = MvcReadMe_Group4
-build_property.ProjectDir = C:\Users\ADMIN\Documents\GitHub\mvc-readme-website\MvcReadMe_Group4\
+build_property.ProjectDir = C:\Users\Trana\Documents\GitHub\mvc-readme-website\MvcReadMe_Group4\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ADMIN\Documents\GitHub\mvc-readme-website\MvcReadMe_Group4
+build_property.MSBuildProjectDirectory = C:\Users\Trana\Documents\GitHub\mvc-readme-website\MvcReadMe_Group4
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Login.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/LoginLoading.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/LoginLoading.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbkxvYWRpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Logout.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Register.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/About.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/AdminNotifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ob3RpZmljYXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/Dashboard.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/Developers.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Admin/Developers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV2ZWxvcGVycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Books/Read.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Books/Read.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcUmVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Create.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Favorites/MyFavorites.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVzXE15RmF2b3JpdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Favorites/_FavoritesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdGVzXF9GYXZvcml0ZXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQm9va3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Delete.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQm9va3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Details.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQm9va3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Edit.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQm9va3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Index.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageBooks/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Create.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Delete.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Details.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Edit.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Index.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/ManageUsers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/Error.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_Layout.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_LayoutAccount.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_LayoutAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/User/BookDetails.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/User/BookDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxCb29rRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/User/Home.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/User/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/_ViewImports.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ADMIN/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/_ViewStart.cshtml]
+[C:/Users/Trana/Documents/GitHub/mvc-readme-website/MvcReadMe_Group4/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

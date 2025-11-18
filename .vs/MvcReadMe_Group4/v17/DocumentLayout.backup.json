@@ -1,226 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\",
+  "WorkspaceRootPath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\manageuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\manageuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\data\\initializedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\data\\initializedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\data\\mvcreadme_group4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\data\\mvcreadme_group4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\bookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\bookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\user\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\user\\home.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\user\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\user\\bookdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\manageusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\manageusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\manageusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\manageusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\manageusers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\manageusers\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\manageusers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\manageusers\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_layoutaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\manageusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\manageusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\managebooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\managebooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\managebooks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\managebooks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\managebooks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\managebooks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\managebooks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\managebooks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\managebooks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\managebooks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\books\\read.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\books\\read.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\admin\\developers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\admin\\developers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\admin\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\admin\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\loginloading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\account\\loginloading.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250512172624_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250512172624_m1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\books\\read.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\books\\read.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250512172410_questionmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250512172410_questionmark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250512151420_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250512151420_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\managebookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\managebookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\managebookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517163851_addrole2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517163851_addrole2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\bookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\bookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250513052324_m2pluralcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250513052324_m2pluralcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517164714_addrole3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517164714_addrole3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\data\\mvcreadme_group4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\data\\mvcreadme_group4context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517164019_addrolerequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517164019_addrolerequired.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\controllers\\manageuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\controllers\\manageuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\mvcreadme_group4contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\mvcreadme_group4contextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517163024_m2_added_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517163024_m2_added_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517163643_add-migration addrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517163643_add-migration addrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250517163404_m4_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250517163404_m4_role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250519051846_simpledailyread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250519051846_simpledailyread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250519050601_addreadcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250519050601_addreadcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250519045829_dailybookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250519045829_dailybookread.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\admin\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\migrations\\20250520055454_finalv1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\migrations\\20250520055454_finalv1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|c:\\users\\trana\\documents\\github\\mvc-readme-website\\mvcreadme_group4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E52693AF-5694-4CA3-AB10-2F84B38D3CB2}|MvcReadMe_Group4\\MvcReadMe_Group4.csproj|solutionrelative:mvcreadme_group4\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -230,112 +78,204 @@
       "DocumentGroups": [
         {
           "DockedWidth": 233,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\Book.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAABIBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T14:40:30.285Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\UserController.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T12:58:19.074Z"
+              "WhenOpened": "2025-05-11T11:38:03.105Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\User.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\User.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:12:13.581Z"
+              "Title": "Read.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAswJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T06:08:16.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Program.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Program.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Program.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAADwv08AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:31:29.523Z",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAADABAAAAAAAAAAAYwFYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T06:38:40.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "InitializeData.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\InitializeData.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Data\\InitializeData.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\InitializeData.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Data\\InitializeData.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBcAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T03:32:20.2Z"
+              "Title": "_LayoutAccount.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T06:50:38.635Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BookRead.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\BookRead.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\BookRead.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\BookRead.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Models\\BookRead.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T07:04:43.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:00:21.889Z"
+              "WhenOpened": "2025-10-24T05:50:05.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-21T15:24:54.569Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AdminController.cs",
               "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAjwFEAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T15:37:35.434Z"
+              "WhenOpened": "2025-09-29T08:11:59.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ManageBooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T08:36:10.186Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\User.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:12:13.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T06:22:37.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookRead.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\BookRead.cs",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\BookRead.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\BookRead.cs",
+              "RelativeToolTip": "MvcReadMe_Group4\\Models\\BookRead.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T15:48:46.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-22T14:15:18.428Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "MvcReadMe_Group4Context.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
               "RelativeDocumentMoniker": "MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
               "RelativeToolTip": "MvcReadMe_Group4\\Data\\MvcReadMe_Group4Context.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAASwBcAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T14:07:49.847Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:13:41.939Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "ManageUsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
               "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
               "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\ManageUsersController.cs",
               "ViewState": "AgIAAE4AAAAAAAAAAAAAwJsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -343,555 +283,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\UserController.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwDAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T11:38:03.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "MvcReadMe_Group4\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T12:54:44.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Home.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\User\\Home.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\User\\Home.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\User\\Home.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\User\\Home.cshtml",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAWwLUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T12:54:32.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAApwEsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:22:46.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Details.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageUsers\\Details.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Details.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageUsers\\Details.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAWwHkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T05:29:03.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageUsers\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Edit.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageUsers\\Edit.cshtml",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAWwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T12:44:52.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Index.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageUsers\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Index.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageUsers\\Index.cshtml",
-              "ViewState": "AgIAABUBAAAAAAAAAAAWwBEBAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T06:37:10.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAADgvxgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T11:38:19.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_LayoutAccount.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAccount.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T16:52:45.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T12:17:19.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAWwKEAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T06:29:39.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "BookDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\User\\BookDetails.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\User\\BookDetails.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\User\\BookDetails.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\User\\BookDetails.cshtml",
-              "ViewState": "AgIAAPgAAAAAAAAAAADgvwcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T18:28:39.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Delete.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageUsers\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Delete.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageUsers\\Delete.cshtml",
-              "ViewState": "AgIAAFYAAAAAAAAAAADgvwkAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T12:49:50.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Create.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageUsers\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageUsers\\Create.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageUsers\\Create.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAADgv4IAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T21:18:28.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Index.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageBooks\\Index.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Index.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageBooks\\Index.cshtml",
-              "ViewState": "AgIAAFMBAAAAAAAAAAAWwOMAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T05:29:13.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageBooks\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Edit.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageBooks\\Edit.cshtml",
-              "ViewState": "AgIAAJMAAAAAAAAAAADgvw0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T20:18:47.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Details.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageBooks\\Details.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Details.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageBooks\\Details.cshtml",
-              "ViewState": "AgIAAI8AAAAAAAAAAAD4v5kAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-13T19:02:29.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Delete.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageBooks\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Delete.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageBooks\\Delete.cshtml",
-              "ViewState": "AgIAAJEAAAAAAAAAAADgvy8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T13:59:41.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Create.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\ManageBooks\\Create.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\ManageBooks\\Create.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\ManageBooks\\Create.cshtml",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAWwHcAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-12T14:00:32.347Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Read.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Books\\Read.cshtml",
-              "ViewState": "AgIAALsBAAAAAAAAAAAWwCQBAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-19T10:49:42.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Developers.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\Developers.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Admin\\Developers.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\Developers.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Admin\\Developers.cshtml",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAqwAoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-15T15:41:55.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAMUBAAAAAAAAAAAawAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T16:11:17.019Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\About.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Admin\\About.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Admin\\About.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Admin\\About.cshtml",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAawE8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T07:01:16.288Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAFABAAAAAAAAAAAawEcAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T16:53:45.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Logout.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\Logout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-18T16:52:29.089Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "LoginLoading.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\LoginLoading.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\LoginLoading.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\LoginLoading.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\LoginLoading.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-20T04:24:55.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAADcBAAAAAAAAAADgv0oBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T16:54:43.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "20250512172624_M1.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512172624_M1.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250512172624_M1.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512172624_M1.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250512172624_M1.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T17:26:24.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20250512172410_QuestionMark.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512172410_QuestionMark.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250512172410_QuestionMark.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512172410_QuestionMark.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250512172410_QuestionMark.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T17:24:10.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "20250512151420_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512151420_InitialCreate.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250512151420_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250512151420_InitialCreate.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250512151420_InitialCreate.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwBUAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T15:14:21.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ManageBooksController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Controllers\\ManageBooksController.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAAwAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T13:55:29.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20250517163851_AddRole2.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163851_AddRole2.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517163851_AddRole2.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163851_AddRole2.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517163851_AddRole2.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAqwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:38:51.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "20250520055454_FinalV1.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250520055454_FinalV1.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250520055454_FinalV1.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250520055454_FinalV1.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250520055454_FinalV1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T05:54:54.852Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "20250519045829_DailyBookRead.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519045829_DailyBookRead.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250519045829_DailyBookRead.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519045829_DailyBookRead.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250519045829_DailyBookRead.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T04:58:29.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "20250519050601_AddReadCount.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519050601_AddReadCount.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250519050601_AddReadCount.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519050601_AddReadCount.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250519050601_AddReadCount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:06:01.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "20250519051846_SimpleDailyRead.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519051846_SimpleDailyRead.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250519051846_SimpleDailyRead.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250519051846_SimpleDailyRead.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250519051846_SimpleDailyRead.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T05:18:46.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "20250513052324_M2PluralContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250513052324_M2PluralContext.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250513052324_M2PluralContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250513052324_M2PluralContext.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250513052324_M2PluralContext.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAowGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:23:24.561Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T11:38:14.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "20250517164714_AddRole3.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517164714_AddRole3.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517164714_AddRole3.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517164714_AddRole3.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517164714_AddRole3.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:47:14.472Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "20250517164019_AddRoleRequired.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517164019_AddRoleRequired.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517164019_AddRoleRequired.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517164019_AddRoleRequired.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517164019_AddRoleRequired.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:40:19.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "MvcReadMe_Group4ContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\MvcReadMe_Group4ContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\MvcReadMe_Group4ContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\MvcReadMe_Group4ContextModelSnapshot.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\MvcReadMe_Group4ContextModelSnapshot.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAQwH8AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:30:55.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "20250517163643_Add-Migration AddRole.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163643_Add-Migration AddRole.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517163643_Add-Migration AddRole.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163643_Add-Migration AddRole.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517163643_Add-Migration AddRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:36:43.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "20250517163404_M4_Role.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163404_M4_Role.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517163404_M4_Role.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163404_M4_Role.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517163404_M4_Role.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:34:04.252Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "20250517163024_M2_Added_Role.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163024_M2_Added_Role.cs",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Migrations\\20250517163024_M2_Added_Role.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Migrations\\20250517163024_M2_Added_Role.cs",
-              "RelativeToolTip": "MvcReadMe_Group4\\Migrations\\20250517163024_M2_Added_Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T16:30:24.859Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\appsettings.json",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\appsettings.json",
-              "RelativeToolTip": "MvcReadMe_Group4\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-12T16:33:55.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "MvcReadMe_Group4\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\ADMIN\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "MvcReadMe_Group4\\Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-11T11:38:12.684Z"
             }
           ]
         }

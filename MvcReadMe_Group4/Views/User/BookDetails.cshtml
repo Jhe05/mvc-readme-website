@@ -4,9 +4,31 @@
     Layout = "../Shared/_Layout.cshtml";
 }
 
+@section Scripts {
+    <script>
+        async function incrementReads(bookId) {
+            try {
+                const response = await fetch('/Books/IncrementReads/' + bookId, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+    </script>
+}
+
 <style>
     .back-button {
-        color: #58a6ff;
+        color: #b388ff; /* light purple */
         text-decoration: none;
         display: inline-flex;
         align-items: center;
@@ -16,17 +38,17 @@
     }
 
         .back-button:hover {
-            color: #408ff7;
+            color: #9c7dff; /* slightly deeper purple on hover */
             transform: translateX(-5px);
         }
 
     .book-details {
-        background: rgba(26, 31, 44, 0.8);
+        background: rgba(40, 20, 60, 0.8); /* deep purple bg */
         border-radius: 12px;
         padding: 1.6rem;
         margin: 0 auto;
         max-width: 920px;
-        border: 1px solid rgba(52, 152, 219, 0.1);
+        border: 1px solid rgba(179, 136, 255, 0.1);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
@@ -50,24 +72,24 @@
         color: #fff;
         font-size: 1.6rem;
         margin-bottom: 0.8rem;
-        text-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        text-shadow: 0 0 10px rgba(179, 136, 255, 0.3);
     }
 
     .book-author {
-        color: #58a6ff;
+        color: #b388ff;
         font-size: 1rem;
         margin-bottom: 1.2rem;
     }
 
     .book-description {
-        color: #a0aec0;
+        color: #c9c3e6;
         line-height: 1.6;
         margin-bottom: 1.6rem;
         font-size: 0.9rem;
     }
 
     .meta-info {
-        background: rgba(26, 31, 44, 0.5);
+        background: rgba(40, 20, 60, 0.5);
         border-radius: 8px;
         padding: 1.2rem;
         margin-top: 0.8rem;
@@ -80,7 +102,7 @@
     }
 
     .meta-label {
-        color: #58a6ff;
+        color: #b388ff;
         font-weight: 600;
         min-width: 120px;
         font-size: 0.9rem;
@@ -92,7 +114,7 @@
     }
 
     .read-button {
-        background: #58a6ff;
+        background: #b388ff;
         color: #fff;
         border: none;
         padding: 0.6rem 1.6rem;
@@ -107,9 +129,9 @@
     }
 
         .read-button:hover {
-            background: #408ff7;
+            background: #9c7dff;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(88, 166, 255, 0.3);
+            box-shadow: 0 5px 15px rgba(179, 136, 255, 0.3);
         }
 
     @@media (max-width: 768px) {
@@ -159,8 +181,8 @@
     }
 
     .recommendation-card {
-        background: rgba(26, 31, 44, 0.8);
-        border: 1px solid rgba(52, 152, 219, 0.1);
+        background: rgba(40, 20, 60, 0.8);
+        border: 1px solid rgba(179, 136, 255, 0.1);
         border-radius: 8px;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
@@ -168,11 +190,11 @@
         text-decoration: none;
     }
 
-    .recommendation-card:hover {
-        transform: translateY(-5px);
-        border-color: #3498db;
-        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
-    }
+        .recommendation-card:hover {
+            transform: translateY(-5px);
+            border-color: #b388ff;
+            box-shadow: 0 10px 20px rgba(179, 136, 255, 0.2);
+        }
 
     .recommendation-cover {
         width: 100%;
@@ -197,7 +219,7 @@
 
     .recommendation-author {
         font-size: 0.75rem;
-        color: #a0aec0;
+        color: #c9c3e6;
     }
 
     @@media (max-width: 1200px) {
@@ -224,6 +246,39 @@
         }
     }
 </style>
+
+    <style>
+        /* Comments theming to match site */
+        .modal-comment-row {
+            background: rgba(50,20,60,0.6); /* deep themed purple */
+            color: #e6def8; /* light text */
+            padding: 12px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(179,136,255,0.08);
+        }
+        .modal-comment-row .comment-header {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap:12px;
+        }
+        .modal-comment-row .comment-user {
+            font-weight:700; /* bold username */
+            color: #fff;
+        }
+        .modal-comment-row .comment-time {
+            color: #bfb0e6;
+            font-size:12px;
+        }
+        .modal-comment-row .comment-text {
+            margin-top:8px;
+            font-weight:700; /* make comment body bold/bright */
+            color: #f6f0ff;
+            white-space:pre-wrap;
+        }
+    </style>
+
 
 <div class="container">
     <a href="@Url.Action("Home")" class="back-button">
@@ -253,9 +308,413 @@
                         </div>
                     </div>
 
-                    <a asp-controller="Books" asp-action="Read" asp-route-id="@Model.Id" class="read-button" target="_blank">
-                        <i class="bi bi-book me-2"></i>Read Book
-                    </a>
+                    <div style="display:flex; align-items:center; gap:12px; margin-top:1.2rem;">
+                        <a asp-controller="Books" asp-action="Read" asp-route-id="@Model.Id" class="read-button" target="_blank" onclick="incrementReads(@Model.Id); return true;">
+                            <i class="bi bi-book me-2"></i>Read Book
+                        </a>
+
+                        <button id="favorite-button" class="favorite-button" type="button" title="Add to Favorites" data-book-id="@Model.Id" style="background:none; border:0; cursor:pointer;">
+                            <i id="favorite-heart" class="fa-regular fa-heart" style="font-size:22px; color:#ccc;"></i>
+                        </button>
+
+                        <!-- Comment button beside favorite -->
+                        <button id="comment-button" class="comment-button" type="button" title="Comments" data-book-id="@Model.Id" style="background:none; border:0; cursor:pointer; display:flex; align-items:center; gap:6px;">
+                            <i id="comment-icon" class="fa-regular fa-comment" style="font-size:20px; color:#ccc;"></i>
+                            <span id="comment-count" style="font-size:13px; color:#c9c3e6;">0</span>
+                        </button>
+                    </div>
+                    @Html.AntiForgeryToken()
+
+                    <!-- Rating UI (stars) -->
+                    <div style="margin-top:12px; display:flex; align-items:center; gap:12px;">
+                        <div id="rating-root" data-book-id="@Model.Id" data-user-id="@(Context.Session.GetInt32("UserId") ?? 0)">
+                            <div id="rating-stars" style="display:inline-block;"></div>
+                            <span id="rating-average" style="color:#c9c3e6; margin-left:10px;">Loading rating...</span>
+                        </div>
+                    </div>
+
+                    <style>
+                        .favorite-button:focus { outline: none; }
+                        .heart-pop {
+                            animation: heart-pop 0.4s ease;
+                        }
+
+                        @@keyframes heart-pop {
+                            0% { transform: scale(1); }
+                            30% { transform: scale(1.25) translateY(-6px); }
+                            60% { transform: scale(0.95); }
+                            100% { transform: scale(1); }
+                        }
+                        .fa-solid.heart-active { color: #ff3b5c !important; }
+                        .fa-regular.heart-inactive { color: #ccc !important; }
+                        .fa-regular.comment-inactive { color: #ccc !important; }
+                        .fa-solid.comment-active { color: #7dd3fc !important; }
+                        /* Rating stars */
+                        .rating-star { font-size:22px; color:#ccc; cursor:pointer; margin-right:6px; }
+                        .rating-star.filled { color:#ffcc00; }
+                    </style>
+
+                    <script>
+                        (function(){
+                            const bookId = @Model.Id;
+                            const favBtn = document.getElementById('favorite-button');
+                            const favHeart = document.getElementById('favorite-heart');
+                            const navHeart = document.getElementById('nav-favorite-heart');
+
+                            function getCsrf() {
+                                const m = document.querySelector('meta[name="csrf-token"]');
+                                return m ? m.getAttribute('content') : '';
+                            }
+
+                            async function setInitial() {
+                                try {
+                                    const res = await fetch('/Favorites/IsFavorite?bookId=' + bookId, { credentials: 'same-origin' });
+                                    if (!res.ok) return;
+                                    const json = await res.json();
+                                    updateHearts(json.isFavorite);
+                                } catch (e) {
+                                    console.error(e);
+                                }
+                            }
+
+                            function updateHearts(isFav) {
+                                if (isFav) {
+                                    favHeart.classList.remove('fa-regular');
+                                    favHeart.classList.add('fa-solid','heart-active');
+                                    favHeart.classList.remove('heart-inactive');
+                                    favHeart.title = 'Remove from Favorites';
+                                    if (navHeart) { navHeart.classList.remove('fa-regular'); navHeart.classList.add('fa-solid','heart-active'); }
+                                } else {
+                                    favHeart.classList.remove('fa-solid','heart-active');
+                                    favHeart.classList.add('fa-regular','heart-inactive');
+                                    favHeart.title = 'Add to Favorites';
+                                    if (navHeart) { navHeart.classList.remove('fa-solid','heart-active'); navHeart.classList.add('fa-regular','heart-inactive'); }
+                                }
+                            }
+
+                            async function toggleFavorite() {
+                                const isSolid = favHeart.classList.contains('fa-solid');
+                                const token = getCsrf();
+                                console.log('CSRF token:', token);
+                                const url = isSolid ? '/Favorites/Remove?bookId=' + bookId : '/Favorites/Add?bookId=' + bookId;
+                                try {
+                                    const resp = await fetch(url, {
+                                        method: 'POST',
+                                        credentials: 'same-origin',
+                                        headers: {
+                                            'RequestVerificationToken': token
+                                        }
+                                    });
+
+                                    console.log('Favorites toggle response status:', resp.status);
+                                    if (!resp.ok) {
+                                        // try to read text response for diagnostics
+                                        const txt = await resp.text();
+                                        console.error('Server returned non-OK response:', resp.status, txt);
+                                        Swal.fire({ icon: 'error', title: 'Server error', text: txt || ('HTTP ' + resp.status) });
+                                        return;
+                                    }
+
+                                    let data;
+                                    try {
+                                        data = await resp.json();
+                                    } catch (parseErr) {
+                                        const txt = await resp.text();
+                                        console.error('Failed to parse JSON:', parseErr, txt);
+                                        Swal.fire({ icon: 'error', title: 'Invalid server response', text: txt });
+                                        return;
+                                    }
+
+                                    if (data.success) {
+                                        const nowFav = !isSolid;
+                                        updateHearts(nowFav);
+                                        // If server returned a favorite object, append it to any open favorites page
+                                        if (nowFav && data.favorite && window.appendFavorite) {
+                                            window.appendFavorite(data.favorite);
+                                        }
+                                        // If server returned removed info, remove from open favorites page
+                                        if (!nowFav && data.removed && window.removeFavorite) {
+                                            window.removeFavorite(data.removed.bookId);
+                                        }
+                                        // pop animation
+                                        favHeart.classList.remove('heart-pop');
+                                        void favHeart.offsetWidth;
+                                        favHeart.classList.add('heart-pop');
+
+                                        if (nowFav) {
+                                            Swal.fire({ toast: true, position: 'top-end', icon: 'success', title: 'Added to Favorites ❤️', showConfirmButton: false, timer: 1400 });
+                                        } else {
+                                            Swal.fire({ toast: true, position: 'top-end', icon: 'info', title: 'Removed from Favorites 💔', showConfirmButton: false, timer: 1400 });
+                                        }
+                                        // refresh navbar count
+                                        if (window.updateFavCount) window.updateFavCount();
+                                    } else {
+                                        console.error('Server returned success=false:', data);
+                                        Swal.fire('Error', data.error || 'Error contacting server', 'error');
+                                    }
+                                } catch (err) {
+                                    console.error('Fetch error toggling favorite:', err);
+                                    Swal.fire('Error', 'Error contacting server. See console for details.', 'error');
+                                }
+                            }
+
+                            if (favBtn) {
+                                favBtn.addEventListener('click', function(e){
+                                    e.preventDefault();
+                                    toggleFavorite();
+                                });
+                            }
+
+                            // Comment button behavior: scroll to comments and open form
+                            const commentBtn = document.getElementById('comment-button');
+                            const commentIcon = document.getElementById('comment-icon');
+                            const commentCountEl = document.getElementById('comment-count');
+
+                            async function loadCommentsForCount() {
+                                try {
+                                    const res = await fetch('/Comments/GetForBook?bookId=' + bookId, { credentials: 'same-origin' });
+                                    if (!res.ok) return;
+                                    const j = await res.json();
+                                    if (j && j.success) {
+                                        const len = (j.comments || []).length;
+                                        commentCountEl.textContent = len;
+                                        if (len > 0) {
+                                            commentIcon.classList.remove('comment-inactive');
+                                            commentIcon.classList.add('comment-active');
+                                        } else {
+                                            commentIcon.classList.remove('comment-active');
+                                            commentIcon.classList.add('comment-inactive');
+                                        }
+                                    }
+                                } catch (e) { console.warn('loadCommentsForCount', e); }
+                            }
+
+                            if (commentBtn) {
+                                commentBtn.addEventListener('click', function(e){
+                                    e.preventDefault();
+                                    // show inline Bootstrap modal for comments
+                                    var modalEl = document.getElementById('commentsModal');
+                                    if (modalEl) {
+                                        var m = new bootstrap.Modal(modalEl);
+                                        m.show();
+                                        // load comments into modal
+                                        loadCommentsIntoModal();
+                                        // focus textarea when modal shown
+                                        modalEl.addEventListener('shown.bs.modal', function(){
+                                            var ta = document.getElementById('modal-comment-text');
+                                            if (ta) ta.focus();
+                                        }, { once: true });
+                                    } else {
+                                        // fallback: navigate to Read page which has comments
+                                        window.location.href = '/Books/Read/' + bookId;
+                                    }
+                                });
+                            }
+
+                            // initial load comment count
+                            document.addEventListener('DOMContentLoaded', loadCommentsForCount);
+
+                            // Modal-related helpers
+                            // Basic HTML escape to avoid injecting raw HTML from comments
+                            function escapeHtml(str) {
+                                if (!str && str !== 0) return '';
+                                return String(str)
+                                    .replace(/&/g, '&amp;')
+                                    .replace(/</g, '&lt;')
+                                    .replace(/>/g, '&gt;')
+                                    .replace(/"/g, '&quot;')
+                                    .replace(/'/g, '&#39;');
+                            }
+
+                            async function loadCommentsIntoModal() {
+                                try {
+                                    var listEl = document.getElementById('modal-comments-list');
+                                    listEl.innerHTML = '<div class="text-muted">Loading comments...</div>';
+                                    const res = await fetch('/Comments/GetForBook?bookId=' + bookId, { credentials: 'same-origin' });
+                                    if (!res.ok) { listEl.innerHTML = '<div class="text-danger">Failed loading comments</div>'; return; }
+                                    const j = await res.json();
+                                    if (!j || !j.success) { listEl.innerHTML = '<div class="text-muted">No comments yet.</div>'; return; }
+                                    const comments = j.comments || [];
+                                    if (comments.length === 0) {
+                                        listEl.innerHTML = '<div class="text-muted">No comments yet. Be the first to comment!</div>';
+                                    } else {
+                                        listEl.innerHTML = '';
+                                        comments.forEach(function(c) {
+                                            var row = document.createElement('div');
+                                            row.className = 'modal-comment-row';
+                                            var user = c.userName || ('User ' + c.userId);
+                                            var time = c.createdAt ? new Date(c.createdAt).toLocaleString() : '';
+                                            var text = c.text ? c.text : '';
+                                            row.innerHTML = '<div class="comment-header"><div><strong class="comment-user">' + escapeHtml(user) + '</strong> <span class="comment-time">' + escapeHtml(time) + '</span></div></div><div class="comment-text">' + escapeHtml(text) + '</div>';
+                                            listEl.appendChild(row);
+                                        });
+                                    }
+                                    // update count on main UI
+                                    commentCountEl.textContent = (comments || []).length;
+                                    if ((comments || []).length > 0) { commentIcon.classList.add('comment-active'); commentIcon.classList.remove('comment-inactive'); }
+                                } catch (e) { console.warn('loadCommentsIntoModal', e); }
+                            }
+
+                            // Post from modal
+                            var modalEl = document.getElementById('commentsModal');
+                            var modalError = document.getElementById('modal-error');
+
+                            // Delegate click for modal post button so handler works even if modal wasn't present at script-run
+                            document.addEventListener('click', async function (e) {
+                                var tgt = e.target;
+                                if (!tgt) return;
+                                // Support clicking inner elements of the button
+                                var btn = tgt.id === 'modal-post-comment' ? tgt : (tgt.closest ? tgt.closest('#modal-post-comment') : null);
+                                if (!btn) return;
+                                // Clear previous error
+                                if (modalError) { modalError.style.display = 'none'; modalError.innerText = ''; }
+
+                                // Re-evaluate current user at click time (modal may not have existed when script first ran)
+                                var modalElNow = document.getElementById('commentsModal');
+                                var currentUserNow = modalElNow ? parseInt(modalElNow.getAttribute('data-current-user') || '0') : 0;
+                                if (!currentUserNow || currentUserNow <= 0) {
+                                    if (confirm('You must be logged in to comment. Go to login page?')) window.location.href = '/Account/Login';
+                                    return;
+                                }
+
+                                var txtEl = document.getElementById('modal-comment-text');
+                                var txt = txtEl ? txtEl.value.trim() : '';
+                                if (!txt) { toastr && toastr.info('Please enter a comment'); return; }
+                                var tokenEl = document.querySelector('input[name="__RequestVerificationToken"]');
+                                var token = tokenEl ? tokenEl.value : '';
+                                var body = new URLSearchParams();
+                                body.append('__RequestVerificationToken', token);
+                                body.append('bookId', bookId);
+                                body.append('text', txt);
+                                try {
+                                    var resp = await fetch('/Comments/Add', { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() });
+                                    var text = await resp.text();
+                                    try {
+                                        var j = JSON.parse(text || '{}');
+                                    } catch (pe) {
+                                        if (modalError) { modalError.style.display = 'block'; modalError.innerText = 'Invalid server response: ' + text.substring(0,200); }
+                                        console.error('Invalid JSON response from /Comments/Add', text);
+                                        return;
+                                    }
+
+                                    if (j && j.success) {
+                                        txtEl.value = '';
+                                        loadCommentsIntoModal();
+                                        loadCommentsForCount();
+                                        toastr && toastr.success('Comment posted');
+                                    } else {
+                                        if (j && j.error && j.error.toLowerCase().includes('not authenticated')) {
+                                            if (confirm('You must be logged in to comment. Go to login page?')) window.location.href = '/Account/Login';
+                                            return;
+                                        }
+                                        var msg = (j && j.error) ? j.error : ('Server returned status ' + resp.status);
+                                        if (modalError) { modalError.style.display = 'block'; modalError.innerText = msg; }
+                                        else alert('Failed to post comment: ' + msg);
+                                    }
+                                } catch (e) { console.error('Post comment failed', e); if (modalError) { modalError.style.display = 'block'; modalError.innerText = 'Network or server error posting comment.'; } }
+                            });
+
+                            // allow nav heart to toggle current book when present
+                            if (navHeart) {
+                                navHeart.addEventListener('click', function(e){
+                                    e.preventDefault();
+                                    toggleFavorite();
+                                });
+                            }
+
+                            document.addEventListener('DOMContentLoaded', setInitial);
+                        })();
+                    </script>
+
+                    <script>
+                        (function(){
+                            const bookId = @Model.Id;
+                            const ratingRoot = document.getElementById('rating-root');
+                            const starsEl = document.getElementById('rating-stars');
+                            const avgEl = document.getElementById('rating-average');
+                            const userId = parseInt(ratingRoot ? ratingRoot.getAttribute('data-user-id') : '0');
+                            // PHP API base (adjust if your PHP scripts are hosted under a different path)
+                            // Deployed to XAMPP htdocs/php_sql -> use http://localhost/php_sql
+                            const PHP_API = 'http://localhost/php_sql';
+
+                            function makeStar(i, filled){
+                                const s = document.createElement('span');
+                                s.className = 'rating-star' + (filled ? ' filled' : '');
+                                s.innerHTML = '\u2605';
+                                s.dataset.val = i;
+                                s.addEventListener('click', onStarClick);
+                                s.addEventListener('mouseover', onStarHover);
+                                s.addEventListener('mouseout', onStarOut);
+                                return s;
+                            }
+
+                            function renderStars(rating){
+                                starsEl.innerHTML = '';
+                                for (let i=1;i<=5;i++){
+                                    starsEl.appendChild(makeStar(i, i<=rating));
+                                }
+                            }
+
+                            let lastKnown = 0;
+
+                            async function loadAverage(){
+                                try{
+                                    const res = await fetch(`${PHP_API}/get_average_rating.php?book_id=${bookId}`);
+                                    const j = await res.json();
+                                    if (j.success){
+                                        avgEl.textContent = `Average: ${j.avg ? j.avg.toFixed(2) : '0.00'} (${j.count})`;
+                                    } else {
+                                        avgEl.textContent = 'No ratings yet';
+                                    }
+                                } catch(e){ console.error('Rating load error', e); avgEl.textContent = 'Error loading rating'; }
+                            }
+
+                            async function onStarClick(e){
+                                if (!userId || userId <= 0){
+                                    alert('Please log in to rate.');
+                                    return;
+                                }
+                                const val = parseInt(e.currentTarget.dataset.val);
+                                const body = new URLSearchParams();
+                                body.append('book_id', bookId);
+                                body.append('user_id', userId);
+                                body.append('rating', val);
+                                try{
+                                    const resp = await fetch(`${PHP_API}/rate_book.php`, { method: 'POST', body });
+                                    const j = await resp.json();
+                                    if (j.success){
+                                        renderStars(val);
+                                        avgEl.textContent = `Average: ${j.avg ? j.avg.toFixed(2) : '0.00'} (${j.count})`;
+                                        // Optionally show a small toast
+                                        toastr && toastr.success('Rating saved');
+                                    } else {
+                                        alert('Error saving rating: ' + (j.error || 'unknown'));
+                                    }
+                                } catch(err){ console.error('Rate error', err); alert('Network error saving rating'); }
+                            }
+
+                            function onStarHover(e){
+                                const v = parseInt(e.currentTarget.dataset.val);
+                                // highlight up to v
+                                const stars = starsEl.querySelectorAll('.rating-star');
+                                stars.forEach(s => {
+                                    const sv = parseInt(s.dataset.val);
+                                    if (sv <= v) s.classList.add('filled'); else s.classList.remove('filled');
+                                });
+                            }
+
+                            function onStarOut(){
+                                // restore to lastKnown
+                                renderStars(lastKnown);
+                            }
+
+                            document.addEventListener('DOMContentLoaded', function(){
+                                renderStars(0);
+                                loadAverage();
+                                // optionally load user's existing rating via the PHP endpoint by extending API
+                            });
+                        })();
+                    </script>
                 </div>
             </div>
         </div>
@@ -274,6 +733,37 @@
                     </div>
                 </a>
             }
+        </div>
+    </div>
+
+    <!-- Comments Modal -->
+    <div class="modal fade" id="commentsModal" tabindex="-1" aria-labelledby="commentsModalLabel" aria-hidden="true" data-current-user="@((Context.Session.GetInt32("UserId") ?? 0))">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="commentsModalLabel">Comments for @Model.Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-comments-list" style="min-height:120px;">
+                        <div class="text-muted">Loading comments...</div>
+                    </div>
+                    <div id="modal-error" class="text-danger mt-2" style="display:none;"></div>
+                </div>
+                <div class="modal-footer" style="display:flex; flex-direction:column; gap:8px;">
+                    <div style="width:100%">
+                        @Html.AntiForgeryToken()
+                        <textarea id="modal-comment-text" class="form-control" rows="3" placeholder="Write a comment..."></textarea>
+                    </div>
+                    <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+                        <div class="text-muted" id="modal-comments-info">Be kind — comments are visible to everyone.</div>
+                        <div>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="modal-post-comment" type="button" class="btn btn-primary">Post Comment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

@@ -13,21 +13,27 @@
     }
 
     .details-card {
-        background-color: #1a2029;
+        background-color: #1a2029; 
         border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-        color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        color: #d1cfe2; 
         overflow: hidden;
-        height: 65vh;
+        min-height: 65vh;
+        transition: all 0.3s ease;
     }
 
+        .details-card:hover {
+            box-shadow: 0 0 15px #7a3fff; 
+            transform: translateY(-5px);
+        }
+
     .card-header-text {
-        background-color: #2b3a55;
-        color: #f0f0f0;
+        background-color: #2b244a; 
+        color: #ffffff; 
         padding: 15px;
         font-size: 28px;
         font-weight: bold;
-        border-bottom: 1px solid #212d42;
+        border-bottom: 1px solid #3a3160;
         text-align: center;
         border-radius: 0;
     }
@@ -43,15 +49,17 @@
         font-weight: bold;
         margin-top: 10px;
         margin-bottom: 5px;
+        color: #c9b6f0; 
     }
 
     dd {
         font-size: 16px;
         margin-bottom: 25px;
+        color: #e0d7f7; 
     }
 
     .btn-custom {
-        background-color: #c27a1d;
+        background-color: #7a3fff; 
         color: white;
         padding: 12px 30px;
         border-radius: 10px;
@@ -59,17 +67,17 @@
         text-decoration: none;
         margin-right: 30px;
         font-size: 1.1rem;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
         .btn-custom:hover {
-            background-color: #e67e22;
-            color: white;
+            background-color: #6c2edb; 
+            box-shadow: 0 0 10px #7a3fff;
         }
 
     .btn-secondary-custom {
         background-color: transparent;
-        color: #359b9f;
+        color: #b19cd9; 
         border: none;
         text-decoration: none;
         font-weight: bold;
@@ -79,7 +87,7 @@
     }
 
         .btn-secondary-custom:hover {
-            color: #1b6f71;
+            color: #7a3fff; 
         }
 
     .cover-panel {
@@ -100,7 +108,7 @@
 
         .book-cover:hover {
             transform: scale(1.05);
-            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 25px 35px rgba(122, 63, 255, 0.7); 
         }
 
     .card-body-custom {
@@ -116,12 +124,13 @@
 
     .image-column {
         width: 350px;
-        background-color: #111820;
+        background-color: #1a152b;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 </style>
+
 
 <div class="container-fluid details-wrapper">
     <div class="row justify-content-center">
@@ -160,7 +169,7 @@
                     </div>
 
                     <div class="image-column">
-                        <img src="@Model.CoverImagePath" alt="Book Cover" class="book-cover" />
+                        <img src="@Model?.CoverImagePath" alt="Book Cover" class="book-cover" />
                     </div>
                 </div>
             </div>

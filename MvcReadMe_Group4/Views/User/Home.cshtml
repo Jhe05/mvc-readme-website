@@ -10,20 +10,21 @@
         margin: 40px 0;
     }
 
-    .header h1 {
-        font-size: 2.7rem;
-        font-weight: 800;
-        margin-bottom: 0.5rem;
+        .header h1 {
+            font-size: 2.7rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
         text-shadow: 0 0 20px rgba(52, 152, 219, 0.3);
-        margin-top: 3rem;
-        color: #408ff7e8;
-    }
+            margin-top: 3rem;
+            color: #b388ff; /* bright purple text */
+            text-shadow: 0 0 20px rgba(179, 136, 255, 0.3); /* purple glow */
+        }
 
-    .header p {
-        font-size: 1.1rem;
-        color: #a0aec0;
-        margin-bottom: 4.5rem;
-    }
+        .header p {
+            font-size: 1.1rem;
+            color: #c9c3e6; /* light lavender */
+            margin-bottom: 4.5rem;
+        }
 
     .search-container {
         max-width: 1035px;
@@ -35,18 +36,18 @@
         width: 100%;
         padding: 9px 13px;
         font-size: 1rem;
-        background-color: rgba(26, 31, 44, 0.8);
-        border: 1px solid rgba(52, 152, 219, 0.2);
+        background-color: rgba(40, 20, 60, 0.8); /* deep purple background */
+        border: 1px solid rgba(179, 136, 255, 0.2);
         border-radius: 8px;
         color: #fff;
     }
 
-    .search-input:focus {
-        outline: none;
-        background-color: rgba(26, 31, 44, 0.9);
-        border-color: #3498db;
-        box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
-    }
+        .search-input:focus {
+            outline: none;
+            background-color: rgba(40, 20, 60, 0.9);
+            border-color: #b388ff; /* purple focus */
+            box-shadow: 0 0 0 0.25rem rgba(179, 136, 255, 0.25);
+        }
 
     .search-button {
         position: absolute;
@@ -55,15 +56,15 @@
         transform: translateY(-50%);
         background: none;
         border: none;
-        color: #8b949e;
+        color: #a78bfa; /* soft purple icon */
         font-size: 1.2rem;
         cursor: pointer;
         padding: 5px 10px;
     }
 
-    .search-button:hover {
-        color: #3498db;
-    }
+        .search-button:hover {
+            color: #b388ff; /* brighter purple hover */
+        }
 
     .books-grid {
         display: grid;
@@ -75,8 +76,8 @@
     }
 
     .book-card {
-        background: rgba(26, 31, 44, 0.8);
-        border: 1px solid rgba(52, 152, 219, 0.1);
+        background: rgba(40, 20, 60, 0.8);
+        border: 1px solid rgba(179, 136, 255, 0.1);
         border-radius: 9px;
         overflow: hidden;
         transition: all 0.3s ease-in-out;
@@ -84,11 +85,11 @@
         text-decoration: none;
     }
 
-    .book-card:hover {
-        transform: translateY(-5px);
-        border-color: #3498db;
-        box-shadow: 0 10px 20px rgba(52, 152, 219, 0.2);
-    }
+        .book-card:hover {
+            transform: translateY(-5px);
+            border-color: #b388ff;
+            box-shadow: 0 10px 20px rgba(179, 136, 255, 0.2);
+        }
 
     .book-cover {
         width: 100%;
@@ -113,7 +114,7 @@
 
     .book-author {
         font-size: 0.8rem;
-        color: #a0aec0;
+        color: #c9c3e6;
     }
 
     .list-view {
@@ -126,8 +127,8 @@
     .list-item {
         display: flex;
         align-items: flex-start;
-        background: rgba(26, 31, 44, 0.8);
-        border: 1px solid rgba(52, 152, 219, 0.1);
+        background: rgba(40, 20, 60, 0.8);
+        border: 1px solid rgba(179, 136, 255, 0.1);
         border-radius: 10px;
         margin-bottom: 1.5rem;
         padding: 1.2rem;
@@ -136,11 +137,11 @@
         text-decoration: none;
     }
 
-    .list-item:hover {
-        border-color: #3498db;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
-    }
+        .list-item:hover {
+            border-color: #b388ff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 136, 255, 0.2);
+        }
 
     .list-cover {
         width: 90px;
@@ -148,8 +149,8 @@
         object-fit: cover;
         border-radius: 8px;
         margin-right: 1.5rem;
-        background: #2d3748;
-        border: 1px solid rgba(52, 152, 219, 0.1);
+        background: #2d1e40; /* darker purple bg */
+        border: 1px solid rgba(179, 136, 255, 0.1);
     }
 
     .list-info {
@@ -164,13 +165,13 @@
     }
 
     .list-author {
-        color: #fff;
+        color: #c9c3e6;
         font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 
     .list-desc {
-        color: #a0aec0;
+        color: #b9b1d6;
         font-size: 0.95rem;
         margin-bottom: 0.2rem;
         display: -webkit-box;
@@ -203,6 +204,7 @@
         }
     }
 </style>
+
 
 <div class="header">
     <h1>E-Library Portal</h1>
@@ -251,16 +253,16 @@
             const listItems = document.querySelectorAll('.list-item');
             const booksGrid = document.querySelector('.books-grid');
             const listView = document.querySelector('.list-view');
-            
+
             if (searchTerm.length > 0) {
                 booksGrid.style.display = 'none';
                 listView.style.display = 'block';
-                
+
                 listItems.forEach(item => {
                     const title = item.querySelector('.list-title').textContent.toLowerCase();
                     const author = item.querySelector('.list-author').textContent.toLowerCase();
                     const desc = item.querySelector('.list-desc').textContent.toLowerCase();
-                    
+
                     if (title.includes(searchTerm) || author.includes(searchTerm) || desc.includes(searchTerm)) {
                         item.style.display = '';
                     } else {

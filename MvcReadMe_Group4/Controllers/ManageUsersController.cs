@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcReadMe_Group4.Data;
 using MvcReadMe_Group4.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace MvcReadMe_Group4.Controllers
 {
     public class ManageUsersController : Controller
     {
         private readonly MvcReadMe_Group4Context _context;
+        private readonly IPasswordHasher<User> _passwordHasher;
 
-        public ManageUsersController(MvcReadMe_Group4Context context)
+        public ManageUsersController(MvcReadMe_Group4Context context, IPasswordHasher<User> passwordHasher)
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
 
         // GET: Users
@@ -54,25 +57,22 @@ namespace MvcReadMe_Group4.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserName,Password")] User user)
+        public async Task<IActionResult> Create([Bind("Id,UserName,Password,Email,Role,FirstName,LastName,AvatarPath")] User user)
         {
             if (ModelState.IsValid)
             {
+                // Hash password before saving
+                if (!string.IsNullOrWhiteSpace(user.Password))
+                {
+                    user.Password = _passwordHasher.HashPassword(user, user.Password);
+                }
+
                 _context.Add(user);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-                
-            // debug lines to show what went wrong
-            Console.WriteLine("Debugging");
-            foreach (var value in ModelState.Values)
-            {
-                foreach (var error in value.Errors)
-                {
-                    Console.WriteLine(error.ErrorMessage); // or use a breakpoint here
-                }
-            }
 
+            // Model state invalid - return view with validation messages.
             return View(user);
         }
 
@@ -97,11 +97,29 @@ namespace MvcReadMe_Group4.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,UserName,Password")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,UserName,Password,Email,Role,FirstName,LastName,AvatarPath")] User user)
         {
             if (id != user.Id)
             {
                 return NotFound();
+            }
+
+            // If admin left password blank, keep existing hashed password
+            if (string.IsNullOrWhiteSpace(user.Password))
+            {
+                // Remove password from model state validation so it doesn't fail
+                ModelState.Remove("Password");
+                var existing = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
+                if (existing == null)
+                {
+                    return NotFound();
+                }
+                user.Password = existing.Password;
+            }
+            else
+            {
+                // Hash new password
+                user.Password = _passwordHasher.HashPassword(user, user.Password);
             }
 
             if (ModelState.IsValid)

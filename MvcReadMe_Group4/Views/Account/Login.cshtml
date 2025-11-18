@@ -11,6 +11,7 @@
             opacity: 0;
             transform: translateX(-30px);
         }
+
         to {
             opacity: 1;
             transform: translateX(0);
@@ -18,8 +19,8 @@
     }
 
     body {
-        background: linear-gradient(135deg, #0a0f1a 0%, #080f1c 50%, #141d29 100%);
-        color: #c9d1d9;
+        background: linear-gradient(135deg, #1a0a1f 0%, #1c0820 50%, #291429 100%);
+        color: #e3d4f9;
         font-family: 'Segoe UI', sans-serif;
         margin: 0;
         height: 100vh;
@@ -31,15 +32,15 @@
         transition: background 0.3s ease;
     }
 
-    body::before {
-        content: '';
-        position: absolute;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle at center, rgba(64, 143, 247, 0.14) 0%, transparent 50%);
-        animation: rotate 40s linear infinite;
-        will-change: transform;
-    }
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(168, 85, 247, 0.14) 0%, transparent 50%);
+            animation: rotate 40s linear infinite;
+            will-change: transform;
+        }
 
     @@keyframes rotate {
         from {
@@ -52,7 +53,7 @@
     }
 
     .login-card {
-        background-color: rgba(15, 23, 42, 0.88);
+        background-color: rgba(42, 23, 54, 0.88);
         border-radius: 15px;
         padding: 0;
         width: 950px;
@@ -61,7 +62,7 @@
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
         margin: auto;
         backdrop-filter: blur(8px);
-        border: 1px solid rgba(64, 143, 247, 0.28);
+        border: 1px solid rgba(168, 85, 247, 0.28);
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -74,7 +75,7 @@
 
     .welcome-section {
         flex: 1;
-        background: linear-gradient(180deg, rgba(26, 40, 87, 0.9), rgba(25, 41, 79, 0.9), rgba(20, 31, 48, 0.6));
+        background: linear-gradient(180deg, rgba(87, 26, 87, 0.9), rgba(79, 25, 79, 0.9), rgba(48, 20, 48, 0.6));
         padding: 60px;
         display: flex;
         flex-direction: column;
@@ -92,13 +93,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(45deg, rgba(64, 143, 247, 0.12), rgba(96, 165, 250, 0.12));
+            background: linear-gradient(45deg, rgba(168, 85, 247, 0.12), rgba(192, 132, 252, 0.12));
             z-index: 0;
         }
 
     .login-form-section {
         flex: 1;
-        background-color: rgba(15, 23, 42, 0.97);
+        background-color: rgba(42, 23, 54, 0.97);
         padding: 60px;
         display: flex;
         flex-direction: column;
@@ -112,7 +113,7 @@
         margin-top: 15px;
         margin-bottom: 15px;
         letter-spacing: 0.05em;
-        color: #e2e8f0;
+        color: #e9d5ff;
         font-family: 'Poppins', sans-serif, 'Segoe UI';
         position: relative;
         z-index: 1;
@@ -120,7 +121,7 @@
 
     .welcome-section .subtitle {
         font-size: 1.1rem;
-        color: #94a3b8;
+        color: #c4b5fd;
         position: relative;
         z-index: 1;
     }
@@ -129,7 +130,7 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        color: #60a5fa;
+        color: #c084fc;
         text-decoration: none;
         font-size: 0.95rem;
         font-weight: 600;
@@ -138,7 +139,7 @@
     }
 
         .signup-link:hover {
-            color: #93c5fd;
+            color: #d8b4fe;
         }
 
     .login-form-section form {
@@ -160,7 +161,7 @@
         font-weight: 600;
         font-size: 0.95rem;
         margin-bottom: 6px;
-        color: #94a3b8;
+        color: #c4b5fd;
     }
 
     .input-wrapper {
@@ -170,12 +171,12 @@
 
     input[type="text"],
     input[type="password"] {
-        background-color: rgba(30, 41, 59, 0.75); 
-        border: 1px solid rgba(64, 143, 247, 0.32); 
+        background-color: rgba(59, 41, 79, 0.75);
+        border: 1px solid rgba(168, 85, 247, 0.32);
         border-radius: 8px;
         padding: 12px 16px;
         font-size: 1rem;
-        color: #e2e8f0;
+        color: #f3e8ff;
         transition: all 0.3s ease;
         width: calc(100% - 32px);
         outline: none;
@@ -183,9 +184,9 @@
 
         input[type="text"]:focus,
         input[type="password"]:focus {
-            background-color: rgba(51, 65, 85, 0.75); 
-            border-color: rgba(64, 143, 247, 0.42); 
-            box-shadow: 0 0 6px 2px rgba(64, 143, 247, 0.22); 
+            background-color: rgba(85, 65, 105, 0.75);
+            border-color: rgba(168, 85, 247, 0.42);
+            box-shadow: 0 0 6px 2px rgba(168, 85, 247, 0.22);
         }
 
     .password-toggle {
@@ -195,7 +196,7 @@
         transform: translateY(-50%);
         background: none;
         border: none;
-        color: #64748b;
+        color: #a78bfa;
         cursor: pointer;
         padding: 5px;
         font-size: 1.1rem;
@@ -203,13 +204,13 @@
     }
 
         .password-toggle:hover {
-            color: #94a3b8;
+            color: #c4b5fd;
         }
 
     .validation-summary-errors {
-        color: #dc2626;
-        background-color: rgba(220, 38, 38, 0.1);
-        border: 1px solid #dc2626;
+        color: #f87171;
+        background-color: rgba(248, 113, 113, 0.1);
+        border: 1px solid #f87171;
         border-radius: 8px;
         padding: 12px;
         margin-bottom: 20px;
@@ -229,14 +230,14 @@
 
     span.text-danger {
         font-size: 0.8rem;
-        color: #dc2626;
+        color: #f87171;
         margin-top: 4px;
         display: block;
         padding-left: 4px;
     }
 
     button[type="submit"] {
-        background: linear-gradient(45deg, rgba(59, 130, 246, 0.6), rgba(96, 165, 250, 0.6)); 
+        background: linear-gradient(45deg, rgba(168, 85, 247, 0.6), rgba(192, 132, 252, 0.6));
         color: white;
         font-size: 1.15rem;
         font-weight: 600;
@@ -251,7 +252,7 @@
     }
 
         button[type="submit"]:hover {
-            background: linear-gradient(45deg, rgba(96, 165, 250, 0.85), rgba(59, 130, 246, 0.85));
+            background: linear-gradient(45deg, rgba(192, 132, 252, 0.85), rgba(168, 85, 247, 0.85));
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
@@ -266,7 +267,7 @@
         left: 0;
         width: 100%;
         height: 80px;
-        background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23111827" fill-opacity="0.5" d="M0,160L40,176C80,192,160,224,240,224C320,224,400,192,480,181.3C560,171,640,181,720,197.3C800,213,880,235,960,234.7C1040,235,1120,213,1200,192C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>') no-repeat center bottom;
+        background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23291429" fill-opacity="0.5" d="M0,160L40,176C80,192,160,224,240,224C320,224,400,192,480,181.3C560,171,640,181,720,197.3C800,213,880,235,960,234.7C1040,235,1120,213,1200,192C1280,171,1360,149,1400,138.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>') no-repeat center bottom;
         background-size: cover;
         opacity: 0.4;
         pointer-events: none;
@@ -277,11 +278,9 @@
     <a asp-controller="Account" asp-action="Register" class="signup-link">Signup &rarr;</a>
 
     <div class="welcome-section">
-        <h2>Welcome to ReadMe</h2>
+        <h2>Welcome to LibroVerse</h2>
         <p class="subtitle">
-            Unlock a growing collection of ideas, perspectives, and possibilities designed to feed your curiosity.
-        </p>
-        
+            A Smarter Space for What You Do — Every Book a World for You.
     </div>
 
     <div class="login-form-section">
@@ -318,7 +317,60 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        // Handle form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            
+            // Send POST request
+            fetch(this.action, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: new URLSearchParams(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Show success message
+                    Swal.fire({
+                        title: 'Welcome!',
+                        text: 'You are officially logged in!',
+                        icon: 'success',
+                        confirmButtonText: 'Proceed',
+                        background: '#140a1a',
+                        color: '#fff',
+                        confirmButtonColor: '#7d4bc8',
+                        allowOutsideClick: false
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // Redirect to the specified URL
+                            window.location.replace(data.redirectTo);
+                        }
+                    });
+                } else {
+                    throw new Error('Login failed');
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Invalid username or password. Please try again.',
+                    icon: 'error',
+                    confirmButtonText: 'OK',
+                    background: '#140a1a',
+                    color: '#fff',
+                    confirmButtonColor: '#7d4bc8'
+                });
+            });
+        });
+
         // Script for toggle show or hide password
         document.addEventListener('DOMContentLoaded', function () {
             const passwordInput = document.getElementById('password-input');
@@ -340,3 +392,5 @@
         });
     </script>
 }
+
+

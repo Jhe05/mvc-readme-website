@@ -9,11 +9,11 @@
     .table-container {
         max-height: 74vh;
         overflow-y: auto;
-        border: 1px solid #3d4554;
-        border-top: 2px solid #359b9f;
-        border-bottom: 2px solid #3d4554;
+        border: 1px solid #4b3a6a; /* softer purple border */
+        border-top: 2px solid #7b2cbf;
+        border-bottom: 2px solid #4b3a6a;
         scrollbar-width: thin;
-        scrollbar-color: #555 transparent;
+        scrollbar-color: #7b2cbf transparent;
         border-radius: 15px;
     }
 
@@ -21,22 +21,22 @@
         width: 100%;
         font-size: 15px;
         border-collapse: collapse;
-        background-color: #2b2f38;
+        background-color: #2a213d; /* dark purple background */
         table-layout: fixed;
-        border-top: 2px solid #359b9f;
+        border-top: 2px solid #7b2cbf;
         border-radius: 15px;
     }
 
         .table-dark thead th {
-            background-color: #1c1f26;
-            color: #ffffff;
+            background-color: #1e162b; /* header deep purple */
+            color: #eae4f8;
             font-weight: 700;
             text-align: center;
             padding: 14px;
-            border-top: 2px solid #359b9f;
-            border-left: 1px solid #3d4554;
-            border-right: 1px solid #3d4554;
-            border-bottom: 1px solid #3d4554;
+            border-top: 2px solid #7b2cbf;
+            border-left: 1px solid #4b3a6a;
+            border-right: 1px solid #4b3a6a;
+            border-bottom: 1px solid #4b3a6a;
             position: sticky;
             top: 0;
             z-index: 1;
@@ -45,56 +45,19 @@
         }
 
             .table-dark thead th.sortable:hover {
-                background-color: #2d313a;
+                background-color: #35264a; /* subtle purple hover */
             }
 
         .table-dark tbody td {
             padding: 14px;
             text-align: center;
-            color: #f0f0f0;
-            border: 1px solid #3d4554;
+            color: #f0e6ff;
+            border: 1px solid #4b3a6a;
             vertical-align: middle;
             word-wrap: break-word;
         }
 
-    .icons-row {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        padding: 0 10px;
-    }
-
-    .icon-btn {
-        font-size: 14px;
-        padding: 8px 11px 8px 11px;
-        border-radius: 6px;
-        color: white;
-        text-decoration: none;
-    }
-
-    .icon-view {
-        background-color: #3498db;
-    }
-
-        .icon-view:hover {
-            background-color: #2980b9;
-        }
-
-    .icon-edit {
-        background-color: #f39c12;
-    }
-
-        .icon-edit:hover {
-            background-color: #e67e22;
-        }
-
-    .icon-delete {
-        background-color: #e74c3c;
-    }
-
-        .icon-delete:hover {
-            background-color: #c0392b;
-        }
+    /* Actions column removed - no action buttons shown */
 
     .table-container::-webkit-scrollbar {
         width: 8px;
@@ -105,15 +68,15 @@
     }
 
     .table-container::-webkit-scrollbar-thumb {
-        background-color: #555;
+        background-color: #7b2cbf;
         border-radius: 10px;
     }
 
         .table-container::-webkit-scrollbar-thumb:hover {
-            background-color: #777;
+            background-color: #9b59b6;
         }
 
-    /* Flexbox for Header */
+    
     .header-bar {
         display: flex;
         justify-content: space-between;
@@ -124,6 +87,7 @@
         .header-bar > h1 {
             margin: 0;
             font-size: 36px;
+            color: #d1a3ff; 
         }
 
         .header-bar > div {
@@ -137,48 +101,46 @@
         font-size: 16px;
         padding: 7px 10px;
         border-radius: 5px;
-        background-color: #37414f;
-        color: white;
-        border: 1px solid #444;
+        background-color: #3a2b57;
+        color: #f3eaff;
+        border: 1px solid #5a3d7a;
         width: 270px;
     }
 
         .search-input:focus {
             outline: none;
+            box-shadow: 0 0 6px #9b59b6;
+            border-color: #9b59b6;
         }
 
     .add-button {
         padding: 7px 10px;
         font-size: 16px;
-        background-color: #27ae60;
+        background-color: #7b2cbf; 
         color: white;
         border-radius: 5px;
         text-decoration: none;
         margin-right: 10px;
+        transition: background-color 0.3s ease;
     }
 
         .add-button:hover {
-            background-color: #2ecc71;
+            background-color: #6a1faf;
         }
 
     body {
         overflow-x: hidden;
+        background-color: #1a1625;
     }
 
     .table-dark th:nth-child(1), .table-dark td:nth-child(1) {
-        width: 40%; /* UserName column */
+        width: 70%; /* UserName column */
     }
 
-    .table-dark th:nth-child(2), .table-dark td:nth-child(2) {
-        width: 40%; /* Password column */
-    }
-
-    .table-dark th:nth-child(3), .table-dark td:nth-child(3) {
-        width: 20%; /* Actions column */
+    .table-dark th:nth-child(1), .table-dark td:nth-child(1) {
+        width: 100%; /* UserName column full width */
     }
 </style>
-
-<!-- Header with Flexbox for Title, Search, and Add User -->
 <div class="header-bar">
     <h1>User Management</h1>
     <div>
@@ -192,8 +154,6 @@
         <thead>
             <tr>
                 <th class="sortable" onclick="sortTable(0)">UserName</th>
-                <th class="sortable" onclick="sortTable(1)">Password</th>
-                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -201,25 +161,6 @@
             {
                 <tr>
                     <td>@item.UserName</td>
-                    <td>
-                        <span class="password" id="password-@item.Id" data-password="@item.Password">••••••••</span>
-                        <span class="password-show" id="show-password-@item.Id" style="cursor: pointer; margin-left: 10px;" onclick="togglePassword(@item.Id)">
-                            <i class="fas fa-eye"></i>
-                        </span>
-                    </td>
-                    <td>
-                        <div class="icons-row">
-                            <a class="icon-btn icon-view" href="@Url.Action("Details", new { id = item.Id })" title="Details">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                            <a class="icon-btn icon-edit" href="@Url.Action("Edit", new { id = item.Id })" title="Edit">
-                                <i class="fas fa-pen"></i>
-                            </a>
-                            <a class="icon-btn icon-delete" href="@Url.Action("Delete", new { id = item.Id })" title="Delete">
-                                <i class="fas fa-trash"></i>
-                            </a>
-                        </div>
-                    </td>
                 </tr>
             }
         </tbody>
@@ -274,28 +215,8 @@
             table.querySelectorAll("th")[n].classList.add(ascending ? "sorted-asc" : "sorted-desc");
         }
 
-        function togglePassword(id) {
-            const passwordField = document.getElementById("password-" + id);
-            const actualPassword = passwordField.getAttribute('data-password');
-            const showPasswordIcon = document.getElementById("show-password-" + id);
-
-            // If the password is currently hidden, show it
-            if (passwordField.innerHTML === "••••••••") {
-                // Change to show the password for 3 seconds
-                passwordField.innerHTML = actualPassword;
-                showPasswordIcon.innerHTML = "<i class='fas fa-eye-slash'></i>"; // change to eye-slash icon
-                setTimeout(() => {
-                    // Hide the password again after 3 seconds
-                    passwordField.innerHTML = "••••••••";
-                    showPasswordIcon.innerHTML = "<i class='fas fa-eye'></i>"; // change back to eye icon
-                }, 3000); // 3 seconds timeout
-            }
-            else {
-                // Hide the password if clicked again
-                passwordField.innerHTML = "••••••••";
-                showPasswordIcon.innerHTML = "<i class='fas fa-eye'></i>"; // revert to eye icon
-            }
-        }
+        // Passwords are not displayed to admins for security reasons.
+        // The togglePassword function and plaintext exposure have been removed.
 
     </script>
 }

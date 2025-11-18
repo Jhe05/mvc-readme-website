@@ -404,7 +404,10 @@ namespace MvcReadMe_Group4.Data
                     bookReads.Add(new BookRead
                     {
                         ReadDate = today.AddDays(-i),
-                        ReadCount = dailyReads[i]
+                        ReadCount = dailyReads[i],
+                        // Associate seeded reads with the first seeded book to
+                        // satisfy the non-nullable BookId foreign key.
+                        BookId = books.Count > 0 ? books[0].Id : 0
                     });
                 }
                 context.BookReads.AddRange(bookReads);

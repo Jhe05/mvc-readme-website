@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "dgSpecHash": "IvtHH69xSsw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\tools\\sqlite_to_mysql\\SqliteToMySql.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Trana\\.nuget\\packages\\microsoft.data.sqlite\\7.0.12\\microsoft.data.sqlite.7.0.12.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.12\\microsoft.data.sqlite.core.7.0.12.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.4\\sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\sqlitepclraw.core\\2.1.4\\sqlitepclraw.core.2.1.4.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.4\\sqlitepclraw.lib.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.4\\sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Trana\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "projectPath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\tools\\sqlite_to_mysql\\SqliteToMySql.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\tools\\sqlite_to_mysql\\SqliteToMySql.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
+      "projectPath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\tools\\sqlite_to_mysql\\SqliteToMySql.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Trana\\Documents\\GitHub\\mvc-readme-website\\MvcReadMe_Group4\\tools\\sqlite_to_mysql\\SqliteToMySql.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

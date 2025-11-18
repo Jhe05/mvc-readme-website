@@ -13,22 +13,23 @@
     }
 
     .edit-card {
-        background-color: #1a2029;
+        background-color: #1a1829; /* deep purple background */
         border-radius: 20px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-        color: #fff;
+        box-shadow: 0 0 30px rgba(128, 0, 128, 0.4);
+        color: #eae4f8;
     }
 
     .card-header-text {
-        background-color: #b86721;
-        color: #fdfdfd;
+        background-color: #6a0dad; /* royal purple header */
+        color: #f3eaff;
         padding: 15px;
         font-size: 1.8rem;
         font-weight: bold;
-        border-bottom: 1px solid #ab601f;
+        border-bottom: 1px solid #5a0ca0;
         text-align: center;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        box-shadow: 0 0 20px rgba(123, 44, 191, 0.5);
     }
 
     .edit-card form {
@@ -39,10 +40,11 @@
         font-weight: bold;
         margin-top: 4px;
         margin-bottom: 10px;
+        color: #d1a3ff; /* soft lavender for labels */
     }
 
     .form-control {
-        background-color: #2c3e50;
+        background-color: #2a203a; /* darker purple input */
         border: none;
         color: #fff;
         border-radius: 10px;
@@ -51,29 +53,31 @@
     }
 
         .form-control:focus {
-            background-color: #2c3e50;
+            background-color: #35264a;
             color: #fff;
-            box-shadow: 0 0 5px #e67e22;
+            box-shadow: 0 0 5px #9b59b6; /* purple glow focus */
         }
 
     .btn-custom {
-        background-color: #197550;
+        background-color: #7b2cbf; /* primary purple button */
         color: white;
         padding: 12px 30px;
         border-radius: 10px;
         border: none;
         font-size: 1.1rem;
         margin-left: auto;
-        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 12px rgba(123, 44, 191, 0.4);
     }
 
         .btn-custom:hover {
-            background-color: #01804d;
+            background-color: #6a1faf; /* deeper purple hover */
+            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.6);
         }
 
     .btn-secondary-custom {
         background-color: transparent;
-        color: #cc7c35;
+        color: #b68cff; /* lavender secondary link */
         border: none;
         font-weight: bold;
         font-size: 1.05rem;
@@ -81,11 +85,11 @@
     }
 
         .btn-secondary-custom:hover {
-            color: #e67e22;
+            color: #d1a3ff;
         }
 
     .validation-summary-errors {
-        color: #ff6b6b;
+        color: #ff6b6b; /* keep red for error clarity */
         margin-bottom: 15px;
     }
 
@@ -96,6 +100,7 @@
         margin-top: 30px;
     }
 </style>
+
 
 <div class="container edit-wrapper">
     <div class="row justify-content-center">
@@ -115,7 +120,9 @@
 
                     <div class="form-group">
                         <label asp-for="Password"></label>
-                        <input asp-for="Password" class="form-control" />
+                        <!-- Do not prefill the password field. Leave blank to keep existing password, enter a new one to update. -->
+                        <input asp-for="Password" class="form-control" value="" autocomplete="new-password" />
+                        <small class="text-muted">Leave blank to keep the current password.</small>
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
 
