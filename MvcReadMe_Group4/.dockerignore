@@ -1,0 +1,11 @@
+bin/
+obj/
+**/node_modules
+**/*.db
+**/*.sqlite
+**/Mvcreadme_db*.sql
+.vs/
+.vscode/
+*.user
+*.log
+**/wwwroot/lib/**
